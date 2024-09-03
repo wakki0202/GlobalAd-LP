@@ -19,7 +19,7 @@
     <title>グローバルアド</title>
   </head>
   <body>
-    <header id="header" class="w-full bg-white fixed z-30">
+    <header id="header" class="w-full bg-white fixed z-[70]">
       <div
         class="flex justify-center items-center gap-[2vw] m-auto py-[0.3vw] text-black"
       >
@@ -38,7 +38,7 @@
           <div class="relative">
             <p class="text-[0.8vw]">ー【最短5分】電話見積もりも受付中!!ー</p>
             <div
-              class="flex items-center bg-[#ffde59] border-2 border-black relative z-50"
+              class="flex items-center bg-[#ffde59] border-2 border-black relative z-[90]"
             >
               <img src="/img/tel-icon.png" alt="" class="w-[2vw] h-[2vw]" />
               <p class="text-[1.3vw] leading-none">
@@ -48,7 +48,7 @@
               </p>
             </div>
             <div
-              class="absolute z-40 w-[15vw] h-[3vw] border-2 border-black bg-[#ffde59] top-[1.3vw] right-[-0.2vw]"
+              class="absolute z-[80] w-[15vw] h-[3vw] border-2 border-black bg-[#ffde59] top-[1.3vw] right-[-0.2vw]"
             ></div>
           </div>
 
@@ -56,7 +56,7 @@
           <div class="relative">
             <p class="text-[0.8vw]">ー【簡単30秒】フォーム相談はコチラ!!ー</p>
             <div
-              class="flex items-center bg-[#ffde59] border-2 border-black relative z-50"
+              class="flex items-center bg-[#ffde59] border-2 border-black relative z-[90]"
             >
               <img src="/img/mail-icon.png" alt="" class="w-[2vw] h-[2vw]" />
               <p class="text-[1.3vw] leading-none">
@@ -66,7 +66,7 @@
               </p>
             </div>
             <div
-              class="absolute z-40 w-[15vw] h-[3vw] border-2 border-black bg-[#ffde59] top-[1.3vw] right-[-0.2vw]"
+              class="absolute z-[80] w-[15vw] h-[3vw] border-2 border-black bg-[#ffde59] top-[1.3vw] right-[-0.2vw]"
             ></div>
           </div>
         </div>
@@ -343,10 +343,10 @@
         >
           <div class="w-11/12 m-auto relative">
             <p
-              class="absolute text-white text-center bg-[#F36B03] text-[1.2vw] px-[0.27vw] pt-[0.55vw] pb-[0.83vw] rounded-lg top-[-15px] left-[50%] translate-x-[-50%] w-[99%]"
+              class="absolute text-white text-center bg-[#FFAE02] text-[1.2vw] px-[0.27vw] pt-[0.55vw] pb-[0.83vw] rounded-lg top-[-15px] left-[50%] translate-x-[-50%] w-[99%]"
             >
-              <span class="text-[0.97vw]">＼初期費用完全無料／</span><br />
-              1記事からでもご相談いただけます
+              <span class="text-[0.97vw]">＼1万〜の低額予算も相談OK!!／</span><br />
+              相談程度でも多数頂戴しています！
             </p>
             <form class="text-black flex flex-col gap-[1.3vw] pt-[5.5vw]">
               <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
@@ -357,7 +357,7 @@
                   id="company"
                   type="text"
                   name="name"
-                  placeholder="株式会社sample"
+                  placeholder="株式会社〇〇〇"
                   class="rounded-xl w-full outline-none text-[1.2vw]"
                 />
               </div>
@@ -369,7 +369,7 @@
                   id="email"
                   type="text"
                   name="name"
-                  placeholder="MokuMoku太郎"
+                  placeholder="山田 太郎（ヤマダタロウ）"
                   class="rounded-xl w-full outline-none text-[1.2vw]"
                 />
               </div>
@@ -381,7 +381,7 @@
                   id="email"
                   type="text"
                   name="name"
-                  placeholder="example@mail.co.jp"
+                  placeholder="info@fioriera.co.jp"
                   class="rounded-xl w-full outline-none text-[1.2vw]"
                 />
               </div>
@@ -393,7 +393,7 @@
                   id="email"
                   type="text"
                   name="name"
-                  placeholder="09000000000"
+                  placeholder="03-6826-0562"
                   class="rounded-xl w-full outline-none text-[1.2vw]"
                 />
               </div>
@@ -404,7 +404,7 @@
                 <textarea
                   id="msg"
                   name="name"
-                  placeholder="お気軽にお問い合わせください。"
+                  placeholder="例）①ジャンル/②LP有無やURL/③ご予算/④運用期間/⑤キャンペーン興味/⑥お問い合わせ詳細など..."
                   rows="4"
                   class="rounded-xl w-full outline-none text-[1.2vw]"
                 ></textarea>
@@ -413,9 +413,9 @@
                 type="submit"
                 name="button"
                 value="送信"
-                class="rounded-lg bg-[#F36B03] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200"
+                class="rounded-lg bg-gradient-to-r from-[#ffde59] to-[#ff914d] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200"
               >
-                問い合わせを送る
+                広告運用の無料相談をする
               </button>
             </form>
           </div>
@@ -705,7 +705,7 @@
       </section>
       <section class="w-9/12">
         <div class="w-11/12 bg-white mt-[4vw] m-auto relative">
-          <h2 class="text-[2.5vw] text-center">グローバルアドが選ばれる<span class="dots">理由</span></h2>
+          <h2 class="text-[2.5vw] text-center">グローバルアド<span class="text-[2vw]">が</span>選ばれる<span class="dots text-[3vw]">理由</span></h2>
 
           <div class="flex justify-center gap-[2vw] mt-[2vw]">
             <div>
@@ -722,9 +722,14 @@
                 <img src="/img/reason1.png" alt="" class="w-[9vw]" />
               </div>
               <img src="/img/arrow.png" alt="" class="w-[6vw] m-auto" />
+              <div class="relative">
               <p class="flex flex-col justify-center items-center leading-none">
-                業界最安水準値!!<span class="text-red-500 text-[5vw]">10%</span>
+                <span class="bg-gradient-to-tr from-[#ffde59] to-[#ff914d] text-white px-[0.3vw] py-[0.2vw] rounded-[0.6vw]">業界最安水準値!!</span><span class="text-red-500 text-[5vw] relative z-10">10%</span>
               </p>
+              <img src="/img/star.png" alt="" class="absolute top-[-1vw] right-[1.8vw] w-[2vw]">
+              <img src="/img/star.png" alt="" class="absolute top-[0.8vw] left-[2vw] w-[2vw] rotate-180">
+              <img src="/img/yellow-under.png" alt="" class="absolute bottom-[-0.2vw] left-[2vw] w-[13vw]">
+              </div>
             </div>
             <div>
               <div
@@ -742,13 +747,16 @@
                 <img src="/img/reason2.png" alt="" class="w-[9vw]" />
               </div>
               <img src="/img/arrow.png" alt="" class="w-[6vw] m-auto" />
-              <p class="flex flex-col justify-center items-center leading-none">
+              <div class="relative">
+              <p class="flex flex-col justify-center items-center leading-none relative z-10">
                 解約費用も無料!
                 <span class="text-red-500 text-[5vw]">
                   0<span class="text-[3vw]">円</span
                   ><span class="text-[2vw]">(無料)</span>
                 </span>
               </p>
+              <img src="/img/yellow-under.png" alt="" class="absolute bottom-[-0.8vw] left-[2vw] w-[13vw]">
+            </div>
             </div>
             <div>
               <div
@@ -764,11 +772,14 @@
                 <img src="/img/reason3.png" alt="" class="w-[10.5vw]" />
               </div>
               <img src="/img/arrow.png" alt="" class="w-[6vw] m-auto" />
-              <p class="flex flex-col justify-center items-center leading-none">
+              <div class="relative">
+              <p class="flex flex-col justify-center items-center leading-none relative z-10">
                 お試し運用可能!<span class="text-red-500 text-[5vw]">
                   1<span class="text-[3vw]">カ月〜</span>
                 </span>
               </p>
+              <img src="/img/yellow-under.png" alt="" class="absolute bottom-[-0.8vw] left-[2vw] w-[12vw]">
+            </div>
             </div>
           </div>
           <p class="mt-[3vw] text-[2vw] text-center">
@@ -779,8 +790,10 @@
       </section>
       <section class="w-9/12">
         <div class="m-auto mt-[5vw] bg-white">
-          <h2 class="text-center text-[3vw]">ほか広告代理店との比較</h2>
-          <div class="bg-[url('/img/difference-background.png')] bg-cover">
+          <h2 class="text-center text-[3vw]"><span class="text-[2.4vw]">ほか</span>広告代理店<span class="text-[2.4vw]">との</span>比較</h2>
+          <div class="bg-[url('/img/difference-background.png')] bg-cover py-[2vw] relative">
+            <img src="/img/diff-pit1.png" alt="" class="w-[4vw] absolute top-[12vw] left-[8.5vw]">
+            <img src="/img/diff-pit2.png" alt="" class="w-[4vw] absolute bottom-[0.4vw] right-[8.2vw]">
           <table class="m-auto border-separate border-spacing-2">
             <tr>
               <th></th>
@@ -903,7 +916,7 @@
       </section>
       <section class="w-9/12">
         <div class="w-11/12 m-auto bg-white mt-[4vw]">
-          <h2 class="text-center text-[3vw]">こんな人に<span class="dots">おすすめ</span>!</h2>
+          <h2 class="text-center text-[3vw]">こんな人<span class="text-[2vw]">に</span><span class="dots">おすすめ</span>!</h2>
           <div class="flex justify-center gap-[2vw]">
             <div class="relative">
               <img src="/img/recommend-left.png" alt="" class="w-[16vw]" />
@@ -927,9 +940,9 @@
               </p>
             </div>
           </div>
-          <p class="text-center">
-            \ 誰でも・わかりやすく・継続的な運用を! /<br />
-            <span class="text-[3vw]">グローバルアドにお任せ下さい！</span>
+          <p class="text-center text-[1.8vw]">
+            \ <span class="text-[#ffc40c]">誰でも</span>・<span class="text-[#ffc40c]">わかりやすく</span>・<span class="text-[#ffc40c]">継続的な運用を!</span> /<br />
+            <span class="text-[3vw]">グローバルアド<span class="text-[2vw]">に</span>お任せ下さい！</span>
           </p>
           <div class="text-center pt-[1.5vw]">
             <p>＼最短即日【無料見積もり】はこちら！／</p>
@@ -951,7 +964,7 @@
       </section>
       <section class="w-9/12">
         <div class="w-11/12 m-auto bg-white mt-[4vw]">
-          <h2 class="text-center text-[3vw]">広告運用から成果までの流れ</h2>
+          <h2 class="text-center text-[3vw]">広告運用<span class="text-[2vw]">から</span><span class="text-[#ffc40c]">成果</span><span class="text-[2vw]">までの</span>流れ</h2>
           <div class="mt-[2vw]">
             <div class="flex justify-center items-center">
               <div class="relative">
@@ -1088,62 +1101,63 @@
       </section>
       <section class="w-9/12">
         <div class="w-11/12 m-auto bg-white mt-[3vw]">
-          <h2 class="text-center text-[2.6vw]">
-            <span>広告運用におけるお悩みは</span>
+          <h2 class="text-center text-[1.5vw]">
+            <span class="text-[2vw]">広告運用</span>における<span class="text-[2vw]">お悩み</span>は</span>
             <br />
-            グローバルアドにお任せ下さい！
+            <span class="text-[3vw]">グローバルアド</span><span class="text-[2vw]">に</span><span class="text-[3vw] text-[#ffc40c]">お任せ</span><span class="text-[2vw]">下さい！</span>
           </h2>
 
-          <div>
-            <div class="relative left-[2vw] mt-[1.4vw]">
-              <img src="/img/balloon.png" alt="" class="w-[34vw]" />
+          <div class="relative">
+            <img src="/img/problem-pit.png" alt="" class="absolute bottom-[-4vw] left-[2vw] w-[12vw]">
+            <div class="relative left-[5vw] mt-[1.4vw]">
+              <img src="/img/balloon.png" alt="" class="w-[29vw]" />
               <p
-                class="flex justify-center text-[1vw] absolute z-10 top-[44%] left-[26%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center text-[0.9vw] absolute z-10 top-[44%] left-[22%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[2vw]" />
                 まずは、予算（月10万円程度）から運用を始めたいな。
               </p>
             </div>
             <div class="relative top-[1vw] left-[32vw]">
-              <img src="/img/balloon.png" alt="" class="w-[34vw]" />
+              <img src="/img/balloon.png" alt="" class="w-[30vw]" />
               <p
-                class="flex justify-center text-[1vw] absolute z-10 top-[44%] left-[26%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center text-[0.9vw] absolute z-10 top-[44%] left-[22.5%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[2vw]" />
                 最初から運用手数料10%にしてくれる広告代理店はないかな？
               </p>
             </div>
-            <div class="relative top-[1.4vw] left-[1vw]">
-              <img src="/img/balloon.png" alt="" class="w-[28vw]" />
+            <div class="relative top-[1.4vw] left-[14vw]">
+              <img src="/img/balloon.png" alt="" class="w-[24vw]" />
               <p
-                class="flex justify-center text-[1vw] absolute z-10 top-[44%] left-[22%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center text-[0.9vw] absolute z-10 top-[44%] left-[18%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[2vw]" />
                 契約期間が1カ月更新ならいいのに...。
               </p>
             </div>
-            <div class="relative top-[2.6vw] left-[3vw]">
-              <img src="/img/balloon.png" alt="" class="w-[32vw]" />
+            <div class="relative top-[2.6vw] left-[20vw]">
+              <img src="/img/balloon.png" alt="" class="w-[22vw]" />
               <p
-                class="flex justify-center text-[1vw] absolute z-10 top-[44%] left-[24%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center text-[0.9vw] absolute z-10 top-[44%] left-[17%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[2vw]" />
                 あわよくば初期費用も無料に...。
               </p>
             </div>
-            <div class="relative top-[3vw] left-[30vw]">
-              <img src="/img/balloon.png" alt="" class="w-[34vw]" />
+            <div class="relative top-[3vw] left-[34vw]">
+              <img src="/img/balloon.png" alt="" class="w-[30vw]" />
               <p
-                class="flex justify-center text-[1vw] absolute z-10 top-[44%] left-[26%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center text-[0.9vw] absolute z-10 top-[44%] left-[23%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[2vw]" />
                 複雑なことより、わかりやすくシンプルな運用だと尚良いな。
               </p>
             </div>
-            <div class="relative top-[4vw] left-[2vw]">
-              <img src="/img/balloon.png" alt="" class="w-[34vw]" />
+            <div class="relative top-[4vw] left-[14vw]">
+              <img src="/img/balloon.png" alt="" class="w-[30vw]" />
               <p
-                class="flex justify-center text-[1vw] absolute z-10 top-[44%] left-[26%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center text-[0.9vw] absolute z-10 top-[44%] left-[23%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[2vw]" />
                 どうせ広告運用してもらうなら継続的なお付き合いにしたいな。
@@ -1481,13 +1495,13 @@
       </section>
       <section>
         <div class="w-9/12 mt-[2vw]">
-          <h2 class="text-center text-[3vw] mt-[1.4vw]"><span>広告運用で</span><br />よく使われる用語</h2>
+          <h2 class="text-center text-[2vw] mt-[1.4vw]"><span>広告運用で</span><br /><span class="text-[3vw]">よく使われる<span class="text-[#ffc40c]">用語</span></span></h2>
 
           <div class="w-8/12 m-auto">
           <h3 class="bg-[#d9d9d9] text-center mt-[2vw] text-[2vw]">
             運用媒体
           </h3>
-          <div class="tabs mt-[1.8vw]">
+          <div class="tabs mt-[1vw]">
             <input id="all" type="radio" name="tab_item">
             <label class="tab_item" for="all">総合</label>
             <input id="programming" type="radio" name="tab_item">
@@ -1507,13 +1521,188 @@
         </div>
       </section>
       <section>
-        <div class="w-9/12 mt-[2vw]">
-          <h2 class="text-center text-[3vw]"><span>リスティング広告運用で</span><br />使用するツールの紹介</h2>
+        <div class="w-9/12 mt-[5vw]">
+          <h2 class="text-center text-[2vw]"><span>広告運用の</span><br /><span class="text-[#ffc40c] text-[3vw]">お役立ちツール</span></h2>
+          <div class="w-8/12 m-auto">
+          <div class="mt-[1.4vw] w-full m-auto flex flex-wrap justify-between gap-y-[1.4vw]">
+            <div class="w-[30%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw] relative">
+              <img src="/img/googleAnalytics.png" alt="" class="w-[3vw] m-auto">
+              <p class="text-center font-bold mt-[0.3vw]">Google Search Console</p>
+              <button
+              class="accordion-header w-fit text-left font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between relative left-[15vw] bottom-[-1.8vw]"
+              >
+                <span
+                  id="accordion-open-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold absolute top-[-15vw]  md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                >
+                  <span class="relative bottom-[-10.4vw] left-[17vw] text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >＋</span
+                  ></span
+                >
+                <span
+                  id="accordion-close-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                  ><span class="relative bottom-[-10.4vw] left-[17vw]  text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >ー</span
+                  ></span
+                >
+              </button>
+              <div class="accordion-content hidden text-center">
+                <p class="text-[2vw] md:text-[0.83vw] pt-[1.8vw] text-center">
+                  SEOを意識したキーワード選定を行います。自社分析や競合分析を行い、狙いたいキーワードでの上位表示を目指します。SEOを意識しないライティングでも軸となるキーワードを選定するなどのサポートが可能です。
+                </p>
+              </div>
+            </div>
+            <div class="w-[30%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw]">
+              <img src="/img/googleAnalytics.png" alt="" class="w-[3vw] m-auto">
+              <p class="text-center font-bold mt-[0.3vw]">Google Search Console</p>
+              <button
+              class="accordion-header w-fit text-left font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between relative left-[15vw] bottom-[-1.8vw]"
+              >
+                <span
+                  id="accordion-open-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold absolute top-[-15vw]  md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                >
+                  <span class="relative bottom-[-10.4vw] left-[17vw] text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >＋</span
+                  ></span
+                >
+                <span
+                  id="accordion-close-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                  ><span class="relative bottom-[-10.4vw] left-[17vw]  text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >ー</span
+                  ></span
+                >
+              </button>
+              <div class="accordion-content hidden text-center">
+                <p class="text-[2vw] md:text-[0.83vw] pt-[1.8vw] text-center">
+                  SEOを意識したキーワード選定を行います。自社分析や競合分析を行い、狙いたいキーワードでの上位表示を目指します。SEOを意識しないライティングでも軸となるキーワードを選定するなどのサポートが可能です。
+                </p>
+              </div>
+            </div>
+            <div class="w-[30%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw]">
+              <img src="/img/googleAnalytics.png" alt="" class="w-[3vw] m-auto">
+              <p class="text-center font-bold mt-[0.3vw]">Google Search Console</p>
+              <button
+              class="accordion-header w-fit text-left font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between relative left-[15vw] bottom-[-1.8vw]"
+              >
+                <span
+                  id="accordion-open-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold absolute top-[-15vw]  md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                >
+                  <span class="relative bottom-[-10.4vw] left-[17vw] text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >＋</span
+                  ></span
+                >
+                <span
+                  id="accordion-close-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                  ><span class="relative bottom-[-10.4vw] left-[17vw]  text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >ー</span
+                  ></span
+                >
+              </button>
+              <div class="accordion-content hidden text-center">
+                <p class="text-[2vw] md:text-[0.83vw] pt-[1.8vw] text-center">
+                  SEOを意識したキーワード選定を行います。自社分析や競合分析を行い、狙いたいキーワードでの上位表示を目指します。SEOを意識しないライティングでも軸となるキーワードを選定するなどのサポートが可能です。
+                </p>
+              </div>
+            </div>
+            <div class="w-[30%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw]">
+              <img src="/img/googleAnalytics.png" alt="" class="w-[3vw] m-auto">
+              <p class="text-center font-bold mt-[0.3vw]">Google Search Console</p>
+              <button
+              class="accordion-header w-fit text-left font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between relative left-[15vw] bottom-[-1.8vw]"
+              >
+                <span
+                  id="accordion-open-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold absolute top-[-15vw]  md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                >
+                  <span class="relative bottom-[-10.4vw] left-[17vw] text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >＋</span
+                  ></span
+                >
+                <span
+                  id="accordion-close-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                  ><span class="relative bottom-[-10.4vw] left-[17vw]  text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >ー</span
+                  ></span
+                >
+              </button>
+              <div class="accordion-content hidden text-center">
+                <p class="text-[2vw] md:text-[0.83vw] pt-[1.8vw] text-center">
+                  SEOを意識したキーワード選定を行います。自社分析や競合分析を行い、狙いたいキーワードでの上位表示を目指します。SEOを意識しないライティングでも軸となるキーワードを選定するなどのサポートが可能です。
+                </p>
+              </div>
+            </div>
+            <div class="w-[30%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw]">
+              <img src="/img/googleAnalytics.png" alt="" class="w-[3vw] m-auto">
+              <p class="text-center font-bold mt-[0.3vw]">Google Search Console</p>
+              <button
+              class="accordion-header w-fit text-left font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between relative left-[15vw] bottom-[-1.8vw]"
+              >
+                <span
+                  id="accordion-open-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold absolute top-[-15vw]  md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                >
+                  <span class="relative bottom-[-10.4vw] left-[17vw] text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >＋</span
+                  ></span
+                >
+                <span
+                  id="accordion-close-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                  ><span class="relative bottom-[-10.4vw] left-[17vw]  text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >ー</span
+                  ></span
+                >
+              </button>
+              <div class="accordion-content hidden text-center">
+                <p class="text-[2vw] md:text-[0.83vw] pt-[1.8vw] text-center">
+                  SEOを意識したキーワード選定を行います。自社分析や競合分析を行い、狙いたいキーワードでの上位表示を目指します。SEOを意識しないライティングでも軸となるキーワードを選定するなどのサポートが可能です。
+                </p>
+              </div>
+            </div>
+            <div class="w-[30%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw]">
+              <img src="/img/googleAnalytics.png" alt="" class="w-[3vw] m-auto">
+              <p class="text-center font-bold mt-[0.3vw]">Google Search Console</p>
+              <button
+              class="accordion-header w-fit text-left font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between relative left-[15vw] bottom-[-1.8vw]"
+              >
+                <span
+                  id="accordion-open-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold absolute top-[-15vw]  md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                >
+                  <span class="relative bottom-[-10.4vw] left-[17vw] text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >＋</span
+                  ></span
+                >
+                <span
+                  id="accordion-close-btn"
+                  class="text-[2vw] md:text-[0.8vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
+                  ><span class="relative bottom-[-10.4vw] left-[17vw]  text-white bg-[#fe2c55] rounded-full px-[0.3vw] pb-[0.1vw]"
+                    >ー</span
+                  ></span
+                >
+              </button>
+              <div class="accordion-content hidden text-center">
+                <p class="text-[2vw] md:text-[0.83vw] pt-[1.8vw] text-center">
+                  SEOを意識したキーワード選定を行います。自社分析や競合分析を行い、狙いたいキーワードでの上位表示を目指します。SEOを意識しないライティングでも軸となるキーワードを選定するなどのサポートが可能です。
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="text-[1.2vw] font-bold text-right">etc...</p>
+          <p class="text-[1.2vw] font-bold text-right">※その他気になるツールがございましたらお気軽にお申し付けください。</p>
+        </div>
+          
         </div>
       </section>
       <section
 
-      class="bg-[#ffde59] bg-[url('img/top-bg.png')] text-white bg-cover py-[2vw]"
+      class="bg-[#ffde59] bg-[url('img/top-bg.png')] text-white bg-cover py-[2vw] mt-[3vw]"
     >
       <div class="w-9/12  flex justify-between">
         <div class="relative w-[80.7vw]">
@@ -1581,7 +1770,7 @@
       
     </section>
 
-      <section id="contact" class="w-full pb-[10vw]">
+      <section id="contact" class="w-full pb-[2vw]">
         <div class="w-9/12">
           <div
             class="w-[95%] m-auto relative pb-[2.2vw] rounded-bl-xl rounded-br-xl"
@@ -1591,7 +1780,7 @@
             </h2>
 
             <div
-              class="bg-white w-9/12 m-auto pt-[2.2vw] flex items-center justify-center text-whiteb mb-[6.6vw] relative z-20 rounded-lg"
+              class="bg-white w-9/12 m-auto pt-[2.2vw] flex items-center justify-center text-whiteb mb-[1vw] relative z-20 rounded-lg"
             >
               <div class="w-11/12 m-auto relative">
                 <!-- <p
@@ -1612,7 +1801,7 @@
                       id="company"
                       type="text"
                       name="name"
-                      placeholder="株式会社sample"
+                      placeholder="株式会社〇〇〇"
                       class="rounded-xl w-full outline-none text-[1.38vw]"
                     />
                   </div>
@@ -1627,7 +1816,7 @@
                       id="email"
                       type="text"
                       name="name"
-                      placeholder="MokuMoku太郎"
+                      placeholder="山田 太郎（ヤマダタロウ）"
                       class="rounded-xl w-full outline-none text-[1.38vw]"
                     />
                   </div>
@@ -1642,7 +1831,7 @@
                       id="email"
                       type="text"
                       name="name"
-                      placeholder="example@mail.co.jp"
+                      placeholder="info@fioriera.co.jp"
                       class="rounded-xl w-full outline-none text-[1.38vw]"
                     />
                   </div>
@@ -1657,7 +1846,7 @@
                       id="email"
                       type="text"
                       name="name"
-                      placeholder="09000000000"
+                      placeholder="03-6826-0562"
                       class="rounded-xl w-full outline-none text-[1.38vw]"
                     />
                   </div>
@@ -1668,7 +1857,7 @@
                     <textarea
                       id="msg"
                       name="name"
-                      placeholder="お気軽にお問い合わせください。"
+                      placeholder="例）①ジャンル/②LP有無やURL/③ご予算/④運用期間/⑤キャンペーン興味/⑥お問い合わせ詳細など..."
                       rows="5"
                       class="rounded-xl w-full outline-none text-[1.38vw]"
                     ></textarea>
@@ -1677,9 +1866,9 @@
                     type="submit"
                     name="button"
                     value="送信"
-                    class="rounded-lg bg-[#F36B03] text-white w-full py-[1.38vw] mt-[1.1vw] text-[1.38vw] hover:bg-yellow-500 duration-200"
+                    class="rounded-lg bg-gradient-to-r from-[#ffde59] to-[#ff914d] text-white w-full py-[1.38vw] mt-[1.1vw] text-[1.38vw] hover:bg-yellow-500 duration-200"
                   >
-                    問い合わせを送る
+                    無料相談を送る
                   </button>
                 </form>
               </div>
@@ -1702,6 +1891,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </body>
   <script>
+    let lastScrollTop = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener(
+      "scroll",
+      function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          // downscroll
+          header.classList.add("fade-out");
+          header.classList.remove("fade-in");
+        } else {
+          // upscroll
+          header.classList.add("fade-in");
+          header.classList.remove("fade-out");
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+      },
+      false
+    );
     document.addEventListener("DOMContentLoaded", function () {
       const mainWrap = document.getElementById("TOP");
       const contactBox = document.getElementById("fixed-contactbox");
@@ -1727,6 +1937,38 @@
         autoplaySpeed: 0, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
         infinite: true,
         slidesToShow: 12,
+      });
+    });
+
+     // 切り分けプランアコーディオン
+     document.querySelectorAll(".accordion-header").forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const plus = button.querySelector("#accordion-open-btn");
+        const minus = button.querySelector("#accordion-close-btn");
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          plus.classList.add("block");
+          plus.classList.remove("hidden");
+          minus.classList.add("hidden");
+          minus.classList.remove("block");
+        } else {
+          content.style.display = "block";
+          plus.classList.remove("block");
+          plus.classList.add("hidden");
+          minus.classList.remove("hidden");
+          minus.classList.add("block");
+        }
+
+        document
+          .querySelectorAll(".accordion-header")
+          .forEach((otherButton) => {
+            if (otherButton !== button) {
+              otherButton
+                .querySelector("#question-triangle")
+                .classList.remove("rotate-90");
+            }
+          });
       });
     });
 
