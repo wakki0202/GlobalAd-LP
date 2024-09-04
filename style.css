@@ -103,59 +103,84 @@ body {
   }
 }
 
-/*タブ切り替え全体のスタイル*/
-.tabs {
-  margin-top: 50px;
-  padding-bottom: 40px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 700px;
-  margin: 0 auto;
+.tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
-
-/*タブのスタイル*/
-.tab_item {
-  width: calc(100% / 3);
-  height: 50px;
-
-  background-color: #ffde59;
-  line-height: 50px;
-  font-size: 16px;
-  text-align: center;
-  color: #1f1f1f;
+.tab-wrap:after {
+  content: "";
+  width: 100%;
+  height: 3px;
   display: block;
-  float: left;
-  text-align: center;
+  order: -1;
+}
+.tab-label {
+  color: rgb(31, 31, 31);
+  background: #ffde59;
   font-weight: bold;
-  transition: all 0.2s ease;
-}
-.tab_item:hover {
-  opacity: 0.75;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  text-align: center;
+  padding: 10px 0.5em;
+  order: -1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 0 0;
+  flex: 1;
 }
 
-/*ラジオボタンを全て消す*/
-input[name="tab_item"] {
-  display: none;
+.tab-label::after {
+  position: absolute;
+  bottom: 0.4vw;
+  right: 0.1vw;
+  content: "+";
+  width: 1.5vw;
+  height: 1.5vw;
+  line-height: 0;
+  padding-top: 0.5vw;
+  margin-left: 0.6vw;
+  background-color: #fe2c55;
+  color: white;
+  border: 2px black solid;
 }
 
-/*タブ切り替えの中身のスタイル*/
-.tab_content {
-  display: none;
-  padding: 40px 40px 0;
-  clear: both;
+.tab-label:not(:last-of-type) {
+  margin-right: 5px;
+}
+.tab-content {
+  width: 100%;
+  height: 0;
   overflow: hidden;
+  border: 0.3vw #ffde59 solid;
+  background: #ffffff;
+  color: rgb(31, 31, 31);
+  opacity: 0;
+}
+/* アクティブなタブ */
+.tab-switch:checked + .tab-label {
+  background: #ffde59;
 }
 
-/*選択されているタブのコンテンツのみを表示*/
-#all:checked ~ #all_content,
-#programming:checked ~ #programming_content,
-#design:checked ~ #design_content {
-  display: block;
+.tab-switch:checked + .tab-label::after {
+  content: "ー";
+  line-height: 0;
+  padding-top: 0.5vw;
+  margin-left: 0.6vw;
+  background-color: #fe2c55;
+  color: white;
+  border: 2px black solid;
 }
-
-/*選択されているタブのスタイルを変える*/
-.tabs input:checked + .tab_item {
-  background-color: #ffde59;
-  border: 3px solid #1f1f1f;
-  color: black;
+.tab-switch:checked + .tab-label + .tab-content {
+  height: auto;
+  overflow: auto;
+  padding: 15px;
+  opacity: 1;
+  transition: 0.5s opacity;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+  display: none;
 }
