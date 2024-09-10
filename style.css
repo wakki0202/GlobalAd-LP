@@ -1,22 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Zen Maru Gothic", serif;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 500;
   overflow-x: hidden;
+  background-color: #faf9f9;
 }
 
-.dots {
-  -webkit-text-emphasis: circle #ff914d;
-  text-emphasis: circle #ff914d;
+.font-bold {
+  font-family: "Noto Sans JP", serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
-.dots2 {
-  -webkit-text-emphasis: filled dot #ff914d;
-  text-emphasis: filled dot #ff914d;
+.text-stroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+#media-icon:hover img {
+  transition: transform 1s;
+  transform: rotateY(360deg);
+}
+
+.underline-before {
+  background: linear-gradient(#ffae02, #ffae02) 0 100%/0 6px no-repeat;
+  /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
+
+  transition: background 3s;
+  /*トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
+
+  text-decoration: none;
+  /*テキストの装飾の設定 */
+}
+
+.underline-after {
+  background-size: 100% 6px;
+  /* 変化後のスタイル。横サイズを0から100%に変えることで指定の文字列に下線を引く */
 }
 
 .fade-out {
