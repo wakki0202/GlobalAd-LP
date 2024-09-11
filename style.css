@@ -133,6 +133,11 @@ body {
   flex-wrap: wrap;
   margin-top: 10px;
 }
+.tab-wrap2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
 .tab-wrap:after {
   content: "";
   width: 100%;
