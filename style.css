@@ -12,6 +12,10 @@ body {
   background-color: #faf9f9;
 }
 
+.font-zenmaru {
+  font-family: "Zen Maru Gothic", serif;
+}
+
 .font-bold {
   font-family: "Noto Sans JP", serif;
   font-weight: 900;
