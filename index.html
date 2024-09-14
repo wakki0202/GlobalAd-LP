@@ -26,7 +26,7 @@
         <div class="ml-[2vw]">
           <p class="">
             <span class="text-[1.1vw] leading-none"
-              >格安広告運用代行「手数料10%」<br />
+              >格安広告運用代行<span class="text-red-500">「手数料10%」</span><br />
               <span class="text-[1.9vw] font-bold">
                 <span class="underline">AD</span>グローバルアド</span
               ></span
@@ -36,13 +36,13 @@
         <div class="flex gap-[1.4vw] mr-[1.6vw] items-center">
           <a href="#plan" class="text-[1.4vw] font-bold">料金</a>
           <a href="#media" class="text-[1.4vw] font-bold">対応媒体</a>
-          <a href="#comparison" class="text-[1.4vw] font-bold">他者比較</a>
+          <a href="#comparison" class="text-[1.4vw] font-bold">他社比較</a>
           <a href="faq" class="text-[1.4vw] font-bold">FAQ</a>
           <!-- 電話見積もり -->
           <div  class="relative">
             <p class="text-[0.8vw]">ー【最短5分】電話見積もりも受付中!!ー</p>
             <div
-              class="flex items-center bg-[#ffde59] border-2 border-black relative z-[90]"
+              class="flex items-center bg-[#ffde59] border-2 border-black relative z-[90] hover:top-[0.08vw] hover:right-[-0.18vw] duration-400"
             >
               <img src="/img/tel-icon.png" alt="" class="w-[2vw] h-[2vw]" />
               <p class="text-[1.6vw] leading-none flex flex-col">
@@ -63,7 +63,7 @@
             >
               <img src="/img/mail-icon.png" alt="" class="w-[2vw] h-[2vw]" />
               <p class="text-[1.3vw] leading-none">
-                無料相談はコチラ!
+                <span class="text-red-500">無料相談</span>はコチラ!
                 <br />
                 <span class="text-[0.9vw]">【受付時間】24時間365日</span>
               </p>
@@ -146,19 +146,19 @@
           </div>
 
           <div class="text-center pt-[1.2vw]">
-            <p class="drop-shadow-lg text-[1.4vw]">ー最短5分電話見積もりはこちら！ー</p>
+            <p class="drop-shadow-lg text-[1.4vw]">ー最短5分無料電話見積もりはこちら！ー</p>
             <div
               class="flex justify-center w-fit m-auto text-black border-2 border-black rounded-[0.2vw] py-[0.6vw] px-[0.5vw] shadow-[0.2vw_0.2vw_0.8vw_0.23vw_rgba(0,0,0,0.2)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
             >
               <img
                 src="/img/tel-icon.png"
                 alt=""
-                class="w-[5vw] aspect-square"
+                class="w-[5.8vw] aspect-square"
               />
-              <p class="font-bold text-[2.3vw] leading-none">
+              <p class="font-bold text-[3vw] leading-none">
                 03-6826-0562
                 <br />
-                <span class="text-[1.2vw]">【受付時間】9時～19時(月～金)</span>
+                <span class="text-[1.5vw]">【受付時間】9時～19時(月～金)</span>
               </p>
             </div>
           </div>
@@ -168,9 +168,9 @@
         >
           <div class="w-11/12 m-auto relative">
             <p
-              class="text-white text-center bg-[#FFAE02] text-[1.2vw] px-[0.83vw] pt-[0.2vw] pb-[0.2vw] rounded-lg w-full font-bold"
+              class="text-white text-center bg-[#FFAE02] text-[1.35vw] px-[0.83vw] pt-[0.2vw] pb-[0.2vw] rounded-lg w-full font-bold"
             >
-              <span class="text-[0.8vw]">＼1万円〜の低額予算も相談OK!!／</span
+              <span class="text-[1vw]">＼1万円〜の低額予算も相談OK!!／</span
               ><br />
               相談程度でも多数頂戴しています！
             </p>
@@ -253,21 +253,14 @@
                 
               </div>
             </div>
-                 <!-- コピー対象要素とコピーボタン -->
-              <input id="copyTarget" class="hidden" type="text" value="
-              ①ジャンル
-              ②LP有無やURL
-              ③ご予算
-              ④運用期間
-              ⑤目標数値
-              ⑥お問い合わせ詳細など" readonly>
-              <button onclick="copyToClipboard()" class="inline-block w-fit">テンプレートをコピーして使う</button>
+            
+              <button type="button" id="templete-btn" class="inline-block w-fit">テンプレートをコピーして使う</button>
               <button
               id="cta-btn"
                 type="submit"
                 name="button"
                 value="送信"
-                class="rounded-lg bg-gradient-to-r from-[#ffde59] to-[#ff914d] text-white w-full text-[1.1vw] py-[0.83vw] leading-none mt-[1vw] hover:bg-yellow-500 duration-200 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
+                class="rounded-lg bg-gradient-to-r from-[#0cc0df] to-[#ffde59] text-white w-full text-[1.1vw] py-[0.83vw] leading-none mt-[1vw] hover:bg-yellow-500 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
               >
                 無料相談を送る
               </button>
@@ -278,13 +271,13 @@
       <!-- 対応可能スライドショー -->
       <div class="">
         <p class="text-black w-[90%] m-auto font-bold">
-          ▼下記の媒体<span class="text-red-500">どれでも</span>対応可能!
+          ▼下記、<span class="text-red-500">どれでも</span>対応可能!
         </p>
         <div class="slider py-[0.4vw] pt-[1.5vw] text-black text-center">
           <!-- Slide 1 -->
           <div class="">
             <img src="/img/googleAdsLogo.png" alt="" class="w-[6vw] m-auto aspect-square" />
-           <p>GDS/YDA</p>
+           <p>GDS/GDA</p>
           </div>
           <div class="">
             <img src="/img/instaLogo.png" alt="" class="w-[6vw] m-auto aspect-square" />
@@ -358,7 +351,7 @@
             <p
               class="absolute text-white text-center bg-[#FFAE02] text-[1.2vw] px-[0.27vw] pt-[0.55vw] pb-[0.83vw] rounded-lg top-[-15px] left-[50%] translate-x-[-50%] w-[99%]"
             >
-              <span class="text-[0.8vw]">＼1万〜の低額予算も相談OK!!／</span><br />
+              <span class="text-[0.8vw]">＼1万円〜の低額予算も相談OK!!／</span><br />
               相談程度でも多数頂戴しています！
             </p>
             <form class="text-black flex flex-col gap-[0.8vw] pt-[5.5vw]">
@@ -427,7 +420,7 @@
                 type="submit"
                 name="button"
                 value="送信"
-                class="rounded-lg bg-gradient-to-r from-[#ffde59] to-[#ff914d] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
+                class="rounded-lg bg-gradient-to-r from-[#0cc0df] to-[#ffde59] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
               >
                 広告運用の無料相談をする
               </button>
@@ -502,7 +495,7 @@
               </p>
               <p class="text-right text-[0.8vw]">
                 ※よくある「初月だけ」ではなく、2か月目以降も<span
-                  class="text-red-500 underline"
+                  class="text-red-500 underline-before"
                   >永久的に10%で運用</span
                 >できます。
               </p>
@@ -542,14 +535,14 @@
             <div
               class="flex relative items-center justify-between bg-white border-2 border-black hover:border-red-500  duration-200 w-9/12 m-auto px-[2vw] py-[1vw]"
             >
-              <div class="text-left">
+              <div class="text-left font-bold">
                 <p>①広告戦略立案</p>
                 <p>②広告アカウントセット</p>
                 <p>③広告運用</p>
                 <p>④レポーティング</p>
               </div>
               <p class="w-fit m-auto text-[4vw]">＋</p>
-              <div class="text-left">
+              <div class="text-left font-bold">
                 <p>⑤提案業務</p>
                 <p>⑥品質改善ミーティング</p>
               </div>
@@ -846,66 +839,66 @@
           <table class="m-auto border-separate border-spacing-2">
             <tr>
               <th></th>
-              <th class="bg-[#ffde59] border border-black px-[2vw] text-[1.2vw]">
+              <th class="bg-[#ffde59] border border-black px-[2vw] font-bold text-[1.2vw]">
                 大手代理店<br />S社
               </th>
               <th
-                class="bg-[#ffde59] border-4 border-black px-[2vw] font-bold text-[1.5vw]"
+                class="bg-[#ffde59] border-4 border-black px-[2vw] font-bold text-[1.9vw]"
               >
                 グローバルアド
               </th>
-              <th class="bg-[#ffde59] border border-black px-[2vw] text-[1.2vw]">
+              <th class="bg-[#ffde59] border border-black px-[2vw] font-bold text-[1.2vw]">
                 スタートアップ<br />V社
               </th>
             </tr>
             <tr class="text-center text-[1.2vw]">
               <td
-                class="bg-[#ffde59] border border-black text-[1.6vw] px-[2vw]"
+                class="bg-[#ffde59] border border-black text-[1.6vw] px-[2vw] font-bold"
               >
                 初期費用
               </td>
               <td class="border border-black bg-gray-200">3万円</td>
-              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2vw] font-bold">0<span class="text-[1.3vw]">円(完全無料)</span></td>
+              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2.4vw] font-bold">0<span class="text-[1.7vw]">円(完全無料)</span></td>
               <td class="border border-black bg-gray-200">5万円</td>
             </tr>
             <tr class="text-center text-[1.2vw]">
-              <td class="bg-[#ffde59] border border-black text-[1.6vw]">
+              <td class="bg-[#ffde59] border border-black text-[1.6vw] font-bold">
                 手数料
               </td>
               <td class="border border-black bg-gray-200">20%〜</td>
-              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2vw] font-bold">10<span class="text-[1.3vw]">%〜</span></td>
+              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2.4vw] font-bold">10<span class="text-[1.7vw]">%〜</span></td>
               <td class="border border-black bg-gray-200">15%</td>
             </tr>
             <tr class="text-center text-[1.2vw]">
-              <td class="bg-[#ffde59] border border-black text-[1.6vw]">
+              <td class="bg-[#ffde59] border border-black text-[1.6vw] font-bold">
                 解約費用
               </td>
               <td class="border border-black bg-gray-200">なし</td>
-              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2vw] font-bold">なし</td>
+              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2.4vw] font-bold">なし</td>
               <td class="border border-black bg-gray-200">あり</td>
             </tr>
             <tr class="text-center text-[1.2vw]">
-              <td class="bg-[#ffde59] border border-black text-[1.6vw]">
+              <td class="bg-[#ffde59] border border-black text-[1.6vw] font-bold">
                 契約期間
               </td>
               <td class="border border-black bg-gray-200">12カ月〜</td>
-              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2vw] font-bold">1<span class="text-[1.3vw]">カ月〜</span></td>
+              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2.4vw] font-bold">1<span class="text-[1.7vw]">カ月〜</span></td>
               <td class="border border-black bg-gray-200">3カ月〜</td>
             </tr>
             <tr class="text-center text-[1.2vw]">
-              <td class="bg-[#ffde59] border border-black text-[1.6vw]">
+              <td class="bg-[#ffde59] border border-black text-[1.6vw] font-bold">
                 最低運用金額
               </td>
               <td class="border border-black bg-gray-200">30万円〜</td>
-              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2vw] font-bold">1<span class="text-[1.3vw]">万円〜</span></td>
+              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2.4vw] font-bold">1<span class="text-[1.7vw]">万円〜</span></td>
               <td class="border border-black bg-gray-200">10万円〜</td>
             </tr>
             <tr class="text-center text-[1.2vw]">
-              <td class="bg-[#ffde59] border border-black text-[1.6vw]">
+              <td class="bg-[#ffde59] border border-black text-[1.6vw] font-bold">
                 対応エリア
               </td>
               <td class="border border-black bg-gray-200">国内</td>
-              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2vw] px-[0.5vw] font-bold">海外広告も対応</td>
+              <td class="border-4 border-black bg-[#ffde59] text-red-500 text-[2.4vw] px-[0.5vw] font-bold">海外広告も対応</td>
               <td class="border border-black bg-gray-200">国内</td>
             </tr>
           </table>
@@ -915,9 +908,9 @@
       >
       <img src="/img/cta-img-pin.png" alt="" class="absolute w-[2vw] top-[-1vw] left-[-1vw]">
       <img src="/img/cta-img-pin.png" alt="" class="absolute w-[2vw] top-[-1vw] right-[-1vw] rotate-[90deg]">
-      <img src="/img/cta-img-pit1.png" alt="" class="absolute w-[5vw] bottom-[0.2vw] left-[1vw]">
+      <img src="/img/cta-img-pit1.png" alt="" class="absolute w-[5.8vw] bottom-[0.2vw] left-[-0.2vw]">
       <img src="/img/cta-img-pit2.png" alt="" class="absolute w-[2vw] bottom-[-1vw] left-[30vw]">
-      <img src="/img/cta-img-pit3.png" alt="" class="absolute w-[4vw] bottom-[8vw] right-[-1.5vw]">
+      <img src="/img/cta-img-pit3.png" alt="" class="absolute w-[5.5vw] bottom-[7.5vw] right-[-1.5vw]">
         <p class="flex items-end text-[2vw] text-center leading-none bg-gradient-to-b from-transparent from-80% to-[#ffde59] w-fit m-auto">
           <span class="flex items-end">
           <span class="flex flex-col items-center"><span class="leading-[1vw] text-[#ff914d]">・・・</span>お気軽</span>に<span class="text-[#ffae02]">ご相談</span>ください</span><img src="/img/top-bikkuri.png" alt="" class="w-[2vw] inline">
@@ -965,24 +958,24 @@
       </section>
       <section class="w-9/12">
         <div class="w-11/12 m-auto bg-[#faf9f9] mt-[4vw]">
-          <h2 class="text-center text-[3vw] flex items-end justify-center gap-[0.2vw]">こんな人<span class="text-[2vw] leading-[3.5vw]">に</span><span class="flex flex-col items-center"><span class="leading-[0.4vw] text-[#ff914d]">・・・・</span>おすすめ</span>!</h2>
+          <h2 class="text-center text-[3vw] flex items-end justify-center gap-[0.2vw] font-bold">こんな人<span class="text-[2vw] leading-[3.5vw]">に</span><span class="flex flex-col items-center"><span class="leading-[0.4vw] text-[#ff914d]">・・・・</span>おすすめ</span>!</h2>
           <div class="flex justify-center gap-[2vw]">
             <div class="relative">
-              <img src="/img/recommend-left.png" alt="" class="w-[16vw]" />
-              <p class="absolute z-10 top-[18%] left-[17%]">
+              <img src="/img/recommend-left.png" alt="" class="w-[18.5vw]" />
+              <p class="absolute z-10 top-[18%] left-[17%] text-center text-[1.25vw]">
                 まずは低額で<br />広告運用を始めたいな
               </p>
             </div>
             <div class="relative">
-              <img src="/img/recommend-center.png" alt="" class="w-[16vw]" />
-              <p class="absolute z-10 top-[20%] left-[20%]">
+              <img src="/img/recommend-center.png" alt="" class="w-[18.5vw]" />
+              <p class="absolute z-10 top-[20%] left-[20%] text-center text-[1.25vw]">
                 契約は<br />
                 1カ月更新が良い！
               </p>
             </div>
             <div class="relative">
-              <img src="/img/recommend-right.png" alt="" class="w-[16vw]" />
-              <p class="absolute z-10 top-[14%] left-[20%]">
+              <img src="/img/recommend-right.png" alt="" class="w-[18.5vw]" />
+              <p class="absolute z-10 top-[14%] left-[20%] text-center text-[1.25vw]">
                 正直どこの<br />
                 広告代理店が良いか<br />
                 迷ってる
@@ -1013,7 +1006,7 @@
         </div>
       </section>
       <section class="w-9/12">
-        <div class="w-11/12 m-auto bg-[#faf9f9] mt-[4vw]">
+        <div class="w-11/12 m-auto bg-[#faf9f9] mt-[4vw] font-bold">
           <h2 class="text-center text-[3vw]">広告運用<span class="text-[2vw]">から</span><span class="text-[#ffc40c]">成果</span><span class="text-[2vw]">までの</span>流れ</h2>
           <div class="mt-[2vw]">
             <div class="flex justify-center items-center">
@@ -1154,7 +1147,7 @@
       </section>
       <section class="w-9/12">
         <div class="w-11/12 m-auto bg-[#faf9f9] mt-[3vw]">
-          <h2 class="text-center text-[1.5vw]">
+          <h2 class="text-center text-[1.5vw] font-bold">
             <span class="text-[2vw]">広告運用</span>における<span class="text-[2vw]">お悩み</span>は</span>
             <br />
             <span class="text-[3vw]">グローバルアド</span><span class="text-[2vw]">に</span><span class="text-[3vw] text-[#ffc40c]">お任せ</span><span class="text-[2vw]">下さい！</span>
@@ -1223,9 +1216,9 @@
           >
           <img src="/img/cta-img-pin.png" alt="" class="absolute w-[2vw] top-[-1vw] left-[-1vw]">
           <img src="/img/cta-img-pin.png" alt="" class="absolute w-[2vw] top-[-1vw] right-[-1vw] rotate-[90deg]">
-          <img src="/img/cta-img-pit1.png" alt="" class="absolute w-[5vw] bottom-[0.2vw] left-[1vw]">
-          <img src="/img/cta-img-pit2.png" alt="" class="absolute w-[2vw] bottom-[-1vw] left-[30vw] z-10">
-          <img src="/img/cta-img-pit3.png" alt="" class="absolute w-[4vw] bottom-[8vw] right-[-1.5vw]">
+          <img src="/img/cta-img-pit1.png" alt="" class="absolute w-[5.8vw] bottom-[0.2vw] left-[-0.2vw]">
+      <img src="/img/cta-img-pit2.png" alt="" class="absolute w-[2vw] bottom-[-1vw] left-[30vw]">
+      <img src="/img/cta-img-pit3.png" alt="" class="absolute w-[5.5vw] bottom-[7.5vw] right-[-1.5vw]">
             <p class="flex items-end text-[2vw] text-center leading-none bg-gradient-to-b from-transparent from-80% to-[#ffde59] w-fit m-auto">
               <span class="flex items-end">
               <span class="flex flex-col items-center"><span class="leading-[0.8vw] text-[#ff914d]">・・・</span>お気軽</span>に<span class="text-[#ffae02]">ご相談</span>ください</span><img src="/img/top-bikkuri.png" alt="" class="w-[2vw] inline">
@@ -1276,24 +1269,24 @@
           <div class="w-[100%] m-auto bg-[#faf9f9] relative pt-[6.6vw]">
             <div class="w-[100%] m-auto border-gray-400 rounded-xl py-[1.1vw]">
               <h2
-                class="text-center font-bold text-[2.8vw] bg-[#ffde59] py-[2vw] flex items-center justify-center"
+                class="text-center font-bold text-[2.3vw] bg-[#ffde59] py-[1.2vw] flex items-center justify-center"
               >
-                <img src="/img/qalogo.png" alt="" />よくあるご質問
+                <img src="/img/qalogo.png" alt="" class="w-[8vw]"/>よくあるご質問
               </h2>
-              <div class="accordion2 pt-[2.7vw] px-[2vw]">
+              <div class="accordion2 pt-[1.6vw] w-10/12 m-auto">
                 <!-- アコーディオンアイテム 1 -->
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <p class="inline-block text-[1.66vw]">
+                    <p class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       運用手数料以外にかかる費用はありますか？
                     </p>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[1.2vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span
                         >広告を出稿するための「広告費」と「運用手数料」の2つのみをご準備ください。
@@ -1310,14 +1303,14 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       低予算(10万円程度)でも広告運用代行はできますか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[1.2vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span
                         >低予算(10万円前後)でもご相談いただけます。
@@ -1333,7 +1326,7 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       広告費はいくらがおすすめですか？
                     </h3>
@@ -1356,7 +1349,7 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       依頼してから何日後に広告が配信されますか？​
                     </h3>
@@ -1378,7 +1371,7 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       他社または自社で運用しているアカウントを見てもらえますか？
                     </h3>
@@ -1401,7 +1394,7 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       いつぐらいから問い合わせが発生しますか？​
                     </h3>
@@ -1421,7 +1414,7 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       途中解約はできますか？
                     </h3>
@@ -1444,7 +1437,7 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       1カ月のお試し依頼でも対応してもらえるでしょうか...？
                     </h3>
@@ -1468,7 +1461,7 @@
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       Googleのリスティング広告以外の広告運用代行も可能ですか？
                     </h3>
@@ -1490,7 +1483,7 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       専門的な内容でも広告運用できますか？
                     </h3>
@@ -1512,7 +1505,7 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       海外広告も相談できますか？​
                     </h3>
@@ -1533,11 +1526,11 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
                     </p>
                   </div>
                 </div>
-                <div class="accordion-item2">
+                <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       動画制作・LP制作・HP制作・SNS運用なども相談できますか？​
                     </h3>
@@ -1553,11 +1546,11 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
                     </p>
                   </div>
                 </div>
-                <div class="accordion-item2">
+                <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       見積もりはいつ頃でますか？
                     </h3>
@@ -1574,11 +1567,11 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
                     </p>
                   </div>
                 </div>
-                <div class="accordion-item2">
+                <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       支払い方法について教えてください。
                     </h3>
@@ -1604,7 +1597,7 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
                   <button
                     class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[1.3vw]">
                       <span>Q.</span>
                       広告運用におけるAI活用について教えてください。
                     </h3>
@@ -1633,7 +1626,7 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
       <section>
         <div class="w-9/12 mt-[2vw]">
           <div class="w-8/12 m-auto">
-          <h2 class="text-center text-[2vw] mt-[1.4vw]"><span>広告運用で</span><br /><span class="text-[3vw]">よく使われる<span class="text-[#ffc40c]">用語</span></span></h2>
+          <h2 class="text-center text-[2vw] mt-[1.4vw] font-bold"><span>広告運用で</span><br /><span class="text-[3vw]">よく使われる<span class="text-[#ffc40c]">用語</span></span></h2>
 
           <p class="bg-[#d9d9d9] text-center py-[0.4vw] text-[1.3vw] mt-[2vw]">運用媒体</p>
 
@@ -1853,7 +1846,7 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
       </section>
       <section>
         <div class="w-9/12 mt-[5vw]">
-          <h2 class="text-center text-[2vw]"><span>広告運用の</span><br /><span class="text-[#ffc40c] text-[3vw]">お役立ちツール</span></h2>
+          <h2 class="text-center text-[2vw] font-bold"><span>広告運用の</span><br /><span class="text-[#ffc40c] text-[3vw]">お役立ちツール</span></h2>
           <div class="w-8/12 m-auto">
           <div class="mt-[1.4vw] w-full m-auto flex flex-wrap justify-between gap-y-[1.4vw]">
             <div class="w-[30%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw] relative">
@@ -2062,10 +2055,10 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
       
     </section>
 
-      <section id="contact" class="w-full pb-[2vw]">
+      <section id="contact" class="w-full">
         <div class="w-9/12">
           <div
-            class="w-[95%] m-auto relative pb-[2.2vw] rounded-bl-xl rounded-br-xl"
+            class="w-[95%] m-auto relative pb-[1.8vw] rounded-bl-xl rounded-br-xl"
           >
             <h2 class="text-center font-bold text-[2vw] pt-[5.5vw]">
               お問い合わせフォーム
@@ -2073,8 +2066,8 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
 
             <p class="text-[0.85vw] text-left pt-[1.2vw] w-[50%] m-auto">
               最低運用手数料や「30万円以下一律3万円」などの設定もございません。<br>
-シンプルに、<span class="font-bold">10%手数料・1カ月更新・初期費用解約費用無料</span>となっております。<br>
-検討段階や低額予算、乗り換えによるコスト削減のご相談など多数頂戴しておりますので、お気軽にお問合せください。
+              シンプルに、<span class="font-bold">10%手数料・1カ月更新・初期費用解約費用無料</span>となっております。<br>
+              検討段階や低額予算、乗り換えによるコスト削減のご相談など多数頂戴しておりますので、お気軽にお問合せください。
             </p>
 
             <div
@@ -2087,84 +2080,90 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
                   お問い合わせはここから！
                 </p> -->
 
-                <form class="text-black flex flex-col gap-[0.8vw]">
-                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                    <p
-                      for="email"
-                      class="text-gray-600 text-[0.85vw] font-bold bg-[#faf9f9]"
-                    >
-                      会社名
-                    </p>
-                    <input
-                      id="company"
-                      type="text"
-                      name="name"
-                      placeholder="株式会社〇〇〇"
-                      class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
-                    />
+                <form class="">
+                  <div class="text-black flex flex-col gap-[0.8vw]">
+                    <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.85vw] font-bold bg-[#faf9f9]"
+                      >
+                        会社名
+                      </p>
+                      <input
+                        id="company"
+                        type="text"
+                        name="name"
+                        placeholder="株式会社〇〇〇"
+                        class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
+                      />
+                    </div>
+                    <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.85vw] font-bold"
+                      >
+                        お名前
+                      </p>
+                      <input
+                        id="email"
+                        type="text"
+                        name="name"
+                        placeholder="山田 太郎（ヤマダタロウ）"
+                        class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
+                      />
+                    </div>
+                    <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.85vw] font-bold"
+                      >
+                        メールアドレス
+                      </p>
+                      <input
+                        id="email"
+                        type="text"
+                        name="name"
+                        placeholder="info@fioriera.co.jp"
+                        class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
+                      />
+                    </div>
+                    <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.85vw] font-bold"
+                      >
+                        電話番号
+                      </p>
+                      <input
+                        id="email"
+                        type="text"
+                        name="name"
+                        placeholder="03-6826-0562"
+                        class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
+                      />
+                    </div>
+
+                    <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                      <p for="msg" class="text-gray-600 text-[0.85vw] font-bold">
+                        お問い合わせ内容
+                      </p>
+                      <textarea
+                        id="msg2"
+                        name="name"
+                        placeholder="例）①ジャンル/②LP有無やURL/③ご予算/④運用期間/⑤キャンペーン興味/⑥お問い合わせ詳細など..."
+                        rows="4"
+                        class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
+                      ></textarea>
+                    </div>
                   </div>
-                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                    <p
-                      for="email"
-                      class="text-gray-600 text-[0.85vw] font-bold"
-                    >
-                      お名前
-                    </p>
-                    <input
-                      id="email"
-                      type="text"
-                      name="name"
-                      placeholder="山田 太郎（ヤマダタロウ）"
-                      class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
-                    />
-                  </div>
-                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                    <p
-                      for="email"
-                      class="text-gray-600 text-[0.85vw] font-bold"
-                    >
-                      メールアドレス
-                    </p>
-                    <input
-                      id="email"
-                      type="text"
-                      name="name"
-                      placeholder="info@fioriera.co.jp"
-                      class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
-                    />
-                  </div>
-                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                    <p
-                      for="email"
-                      class="text-gray-600 text-[0.85vw] font-bold"
-                    >
-                      電話番号
-                    </p>
-                    <input
-                      id="email"
-                      type="text"
-                      name="name"
-                      placeholder="03-6826-0562"
-                      class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
-                    />
-                  </div>
-                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                    <p for="msg" class="text-gray-600 text-[0.85vw] font-bold">
-                      お問い合わせ内容
-                    </p>
-                    <textarea
-                      id="msg"
-                      name="name"
-                      placeholder="例）①ジャンル/②LP有無やURL/③ご予算/④運用期間/⑤キャンペーン興味/⑥お問い合わせ詳細など..."
-                      rows="4"
-                      class="rounded-xl w-full outline-none text-[1.1vw] bg-[#faf9f9]"
-                    ></textarea>
-                  </div>
+
+                  <button type="button" id="templete-btn2" class="inline-block w-fit">テンプレートをコピーして使う</button>
                   <button
+                  id="cta-btn"
                     type="submit"
                     name="button"
                     value="送信"
-                    class="rounded-lg bg-gradient-to-r from-[#ffde59] to-[#ff914d] text-white w-full py-[1.1vw] mt-[0.6vw] text-[1.1vw] hover:bg-yellow-500 duration-200"
+                    class="rounded-lg bg-gradient-to-r from-[#0cc0df] to-[#ffde59] text-white w-full py-[1.1vw] mt-[1.2vw] text-[1.1vw] hover:bg-yellow-500 duration-200 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
                   >
                     無料相談を送る
                   </button>
@@ -2304,17 +2303,17 @@ Facebook広告・Instagram広告・LINE広告・Youtube広告・TikTok広告な�
       });
     });
 
-    function copyToClipboard() {
-            // コピー対象をJavaScript上で変数として定義する
-            var copyTarget = document.getElementById("copyTarget");
 
-            // コピー対象のテキストを選択する
-            copyTarget.select();
+    document.getElementById("templete-btn").addEventListener("click", function() {
+    document.getElementById("msg").value = "①ジャンル\n②LP有無やURL\n③ご予算\n④運用期間\n⑤目標数値\n⑥お問い合わせ詳細など";
+});
 
-            // 選択しているテキストをクリップボードにコピーする
-            document.execCommand("Copy");
 
-        }
+document.getElementById("templete-btn2").addEventListener("click", function() {
+    document.getElementById("msg2").value = "①ジャンル\n②LP有無やURL\n③ご予算\n④運用期間\n⑤目標数値\n⑥お問い合わせ詳細など";
+});
+    
+    
 
      // 切り分けプランアコーディオン
      document.querySelectorAll(".accordion-header").forEach((button) => {
