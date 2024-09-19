@@ -26,8 +26,8 @@
         <div class="ml-[2vw]">
           <p class="">
             <span class="text-[1.1vw] leading-none"
-              >格安広告運用代行<span class="text-red-500">「手数料10%」</span
-              ><br />
+              ><span class="font-bold">格安広告運用代行</span
+              ><span class="text-red-500">「手数料10%」</span><br />
               <span class="text-[1.9vw] font-bold">
                 <span class="underline">AD</span>グローバルアド</span
               ></span
@@ -68,7 +68,9 @@
             >
               <img src="/img/mail-icon.png" alt="" class="w-[2vw] h-[2vw]" />
               <p class="text-[1.3vw] leading-none">
-                <span class="text-red-500">無料相談</span>はコチラ!
+                <span class="font-bold"
+                  ><span class="text-red-500">無料相談</span>はコチラ!</span
+                >
                 <br />
                 <span class="text-[0.9vw]">【受付時間】24時間365日</span>
               </p>
@@ -297,7 +299,7 @@
               <button
                 type="button"
                 id="templete-btn"
-                class="inline-block w-fit"
+                class="inline-block w-fit text-blue-600 underline"
               >
                 テンプレートをコピーして使う
               </button>
@@ -306,7 +308,7 @@
                 type="submit"
                 name="button"
                 value="送信"
-                class="rounded-lg bg-gradient-to-r from-[#0cc0df] to-[#ffde59] text-white w-full text-[1.1vw] py-[0.83vw] leading-none mt-[1vw] hover:bg-yellow-500 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
+                class="rounded-lg bg-gradient-to-l from-[#ff914d] to-[#ffde59] text-white w-full text-[1.1vw] py-[0.83vw] leading-none mt-[1vw] hover:bg-yellow-500 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
               >
                 無料相談を送る
               </button>
@@ -317,7 +319,7 @@
       <!-- 対応可能スライドショー -->
       <div class="">
         <p class="text-black w-[90%] m-auto font-bold">
-          ▼下記、<span class="text-red-500">どれでも</span>対応可能!
+          ▼下記、<span class="text-red-500">どれでも</span>広告運用できます!
         </p>
         <div class="slider py-[0.4vw] pt-[1.5vw] text-black text-center">
           <!-- Slide 1 -->
@@ -504,73 +506,94 @@
                 ><br />
                 相談程度でも多数頂戴しています！
               </p>
-              <form class="text-black flex flex-col gap-[0.8vw] pt-[5.5vw]">
-                <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                  <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
-                    会社名
-                  </p>
-                  <input
-                    id="company"
-                    type="text"
-                    name="name"
-                    placeholder="株式会社〇〇〇"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
-                  />
+              <form class="text-black pt-[5.5vw]">
+                <div class="text-black flex flex-col gap-[0.8vw]">
+                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[0.97vw] font-bold"
+                    >
+                      会社名
+                    </p>
+                    <input
+                      id="company"
+                      type="text"
+                      name="name"
+                      placeholder="株式会社〇〇〇"
+                      class="rounded-xl w-full outline-none text-[1.2vw]"
+                    />
+                  </div>
+                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[0.97vw] font-bold"
+                    >
+                      お名前
+                    </p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="name"
+                      placeholder="山田 太郎（ヤマダタロウ）"
+                      class="rounded-xl w-full outline-none text-[1.2vw]"
+                    />
+                  </div>
+                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[0.97vw] font-bold"
+                    >
+                      メールアドレス
+                    </p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="name"
+                      placeholder="info@fioriera.co.jp"
+                      class="rounded-xl w-full outline-none text-[1.2vw]"
+                    />
+                  </div>
+                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[0.97vw] font-bold"
+                    >
+                      電話番号
+                    </p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="name"
+                      placeholder="03-6826-0562"
+                      class="rounded-xl w-full outline-none text-[1.2vw]"
+                    />
+                  </div>
+                  <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
+                    <p for="msg" class="text-gray-600 text-[0.97vw] font-bold">
+                      お問い合わせ内容
+                    </p>
+                    <textarea
+                      id="msg3"
+                      name="name"
+                      placeholder="例）①ジャンル / ②LP有無やURL / ③ご予算 / ④運用期間 / ⑤目標数値 / ⑥お問い合わせ詳細など..."
+                      rows="4"
+                      class="rounded-xl w-full outline-none text-[1.2vw]"
+                    ></textarea>
+                  </div>
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                  <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
-                    お名前
-                  </p>
-                  <input
-                    id="email"
-                    type="text"
-                    name="name"
-                    placeholder="山田 太郎（ヤマダタロウ）"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
-                  />
-                </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                  <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
-                    メールアドレス
-                  </p>
-                  <input
-                    id="email"
-                    type="text"
-                    name="name"
-                    placeholder="info@fioriera.co.jp"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
-                  />
-                </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                  <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
-                    電話番号
-                  </p>
-                  <input
-                    id="email"
-                    type="text"
-                    name="name"
-                    placeholder="03-6826-0562"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
-                  />
-                </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
-                  <p for="msg" class="text-gray-600 text-[0.97vw] font-bold">
-                    お問い合わせ内容
-                  </p>
-                  <textarea
-                    id="msg"
-                    name="name"
-                    placeholder="例）①ジャンル / ②LP有無やURL / ③ご予算 / ④運用期間 / ⑤目標数値 / ⑥お問い合わせ詳細など..."
-                    rows="4"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
-                  ></textarea>
-                </div>
+                <button
+                  type="button"
+                  id="templete-btn3"
+                  class="inline-block w-fit text-blue-600 underline"
+                >
+                  テンプレートをコピーして使う
+                </button>
                 <button
                   id="cta-btn"
                   type="submit"
                   name="button"
                   value="送信"
-                  class="rounded-lg bg-gradient-to-r from-[#0cc0df] to-[#ffde59] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
+                  class="rounded-lg bg-gradient-to-l from-[#ff914d] to-[#ffde59] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
                 >
                   広告運用の無料相談をする
                 </button>
@@ -626,21 +649,39 @@
                   お任せプラン
                 </td>
                 <td
-                  class="border-2 border-black bg-white text-black text-center leading-none py-[1.8vw] text-[2vw]"
+                  class="relative border-2 border-black bg-[#ff3131] text-[#ffde59] text-center leading-none py-[1.8vw] text-[1.3vw]"
                 >
-                  永久固定<br />
-                  <span id="js-count" class="text-[5vw]">20</span>
-                  <span class="text-[3vw]">%</span>
+                  業界最安水準!!<br />
+                  <span id="js-count" class="text-[5vw] pt-[1vw] inline-block"
+                    >20</span
+                  >
+                  <span class="text-[2.5vw]">%</span>
+
+                  <img
+                    src="/img/price-down-logo.png"
+                    alt=""
+                    class="absolute w-[4vw] right-[0.8vw] top-[3vw]"
+                  />
+                  <p
+                    class="flex items-center text-[1.5vw] text-white absolute w-[4vw] right-[0.1vw] top-[4vw] leading-none"
+                  >
+                    50
+                    <span class="flex flex-col text-[0.5vw] leading-none"
+                      >off<span class="text-[0.75vw] leading-none"
+                        >%</span
+                      ></span
+                    >
+                  </p>
                 </td>
                 <td
-                  class="border-2 border-black bg-white text-black text-center leading-none px-[1vw] text-[2vw]"
+                  class="border-2 border-black bg-white text-black text-center leading-none px-[1vw] text-[1.3vw]"
                 >
-                  お試しOK!<br />
+                  縛りなし！<br />
                   <span class="text-[5vw]">1</span
                   ><span class="text-[2.4vw]">ヶ月〜</span>
                 </td>
                 <td
-                  class="border-2 border-black bg-white text-black text-center leading-none text-[2vw]"
+                  class="border-2 border-black bg-white text-black text-center leading-none text-[1.3vw]"
                 >
                   完全無料<br />
                   <span class="text-[5vw]">0</span
@@ -681,7 +722,7 @@
             <a
               id="cta-btn"
               href="#TOP"
-              class="flex items-center w-fit m-auto justify-center inline-block rounded-full text-white px-[2vw] py-[1vw] text-[1.5vw] bg-gradient-to-r from-[#0cc0df] to-[#ffde59] shadow-[0.24vw_0.24vw_0.28vw_0.13vw_rgba(0,0,0,0.4)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
+              class="flex items-center w-fit m-auto justify-center inline-block rounded-full text-white px-[2vw] py-[1vw] text-[1.5vw] bg-gradient-to-l from-[#ff914d] to-[#ffde59] shadow-[0.24vw_0.24vw_0.28vw_0.13vw_rgba(0,0,0,0.4)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
               >広告運用の無料相談をする！<img
                 src="/img/plan-btnmark.png"
                 alt=""
@@ -974,7 +1015,7 @@
             <img
               src="/img/cta-img-pit1.png"
               alt=""
-              class="absolute w-[5vw] bottom-[0.2vw] left-[1vw]"
+              class="absolute w-[6vw] bottom-[0.2vw] left-[0vw]"
             />
             <img
               src="/img/cta-img-pit2.png"
@@ -984,7 +1025,7 @@
             <img
               src="/img/cta-img-pit3.png"
               alt=""
-              class="absolute w-[4vw] bottom-[8vw] right-[-1.5vw]"
+              class="absolute w-[6vw] bottom-[8vw] right-[-2vw]"
             />
             <p
               class="flex items-end text-[2vw] text-center leading-none bg-gradient-to-b from-transparent from-80% to-[#ffde59] w-fit m-auto font-bold"
@@ -1267,7 +1308,7 @@
             <img
               src="/img/diff-pit1.png"
               alt=""
-              class="w-[4vw] absolute top-[12vw] left-[8.5vw]"
+              class="w-[4vw] absolute top-[12vw] left-[7.5vw]"
             />
             <img
               src="/img/diff-pit2.png"
@@ -1295,7 +1336,7 @@
               </tr>
               <tr class="text-center text-[1.2vw]">
                 <td
-                  class="bg-[#ffde59] border border-black text-[1.6vw] px-[2vw] font-bold"
+                  class="bg-[#ffde59] border border-black text-[1.8vw] px-[2vw] font-bold"
                 >
                   初期費用
                 </td>
@@ -1309,7 +1350,7 @@
               </tr>
               <tr class="text-center text-[1.2vw]">
                 <td
-                  class="bg-[#ffde59] border border-black text-[1.6vw] font-bold"
+                  class="bg-[#ffde59] border border-black text-[1.8vw] font-bold"
                 >
                   手数料
                 </td>
@@ -1323,7 +1364,7 @@
               </tr>
               <tr class="text-center text-[1.2vw]">
                 <td
-                  class="bg-[#ffde59] border border-black text-[1.6vw] font-bold"
+                  class="bg-[#ffde59] border border-black text-[1.8vw] font-bold"
                 >
                   解約費用
                 </td>
@@ -1337,7 +1378,7 @@
               </tr>
               <tr class="text-center text-[1.2vw]">
                 <td
-                  class="bg-[#ffde59] border border-black text-[1.6vw] font-bold"
+                  class="bg-[#ffde59] border border-black text-[1.8vw] font-bold"
                 >
                   契約期間
                 </td>
@@ -1351,7 +1392,7 @@
               </tr>
               <tr class="text-center text-[1.2vw]">
                 <td
-                  class="bg-[#ffde59] border border-black text-[1.6vw] font-bold"
+                  class="bg-[#ffde59] border border-black text-[1.8vw] font-bold"
                 >
                   最低運用金額
                 </td>
@@ -1365,7 +1406,7 @@
               </tr>
               <tr class="text-center text-[1.2vw]">
                 <td
-                  class="bg-[#ffde59] border border-black text-[1.6vw] font-bold"
+                  class="bg-[#ffde59] border border-black text-[1.8vw] font-bold"
                 >
                   対応エリア
                 </td>
@@ -1395,7 +1436,7 @@
             <img
               src="/img/cta-img-pit1.png"
               alt=""
-              class="absolute w-[5.8vw] bottom-[0.2vw] left-[-0.2vw]"
+              class="absolute w-[5.7vw] bottom-[0.2vw] left-[0vw]"
             />
             <img
               src="/img/cta-img-pit2.png"
@@ -1405,7 +1446,7 @@
             <img
               src="/img/cta-img-pit3.png"
               alt=""
-              class="absolute w-[5.5vw] bottom-[7.5vw] right-[-1.5vw]"
+              class="absolute w-[6vw] bottom-[8vw] right-[-2vw]"
             />
             <p
               class="flex items-end text-[2vw] font-bold text-center leading-none bg-gradient-to-b from-transparent from-80% to-[#ffde59] w-fit m-auto"
@@ -1527,7 +1568,7 @@
             <a
               id="cta-btn"
               href="#TOP"
-              class="flex items-center w-fit m-auto justify-center inline-block rounded-full text-white px-[2vw] py-[1vw] text-[1.5vw] bg-gradient-to-r from-[#0cc0df] to-[#ffde59] shadow-[0.24vw_0.24vw_0.28vw_0.13vw_rgba(0,0,0,0.4)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
+              class="flex items-center w-fit m-auto justify-center inline-block rounded-full text-white px-[2vw] py-[1vw] text-[1.5vw] bg-gradient-to-l from-[#ff914d] to-[#ffde59] shadow-[0.24vw_0.24vw_0.28vw_0.13vw_rgba(0,0,0,0.4)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
               >広告運用の無料相談をする！<img
                 src="/img/plan-btnmark.png"
                 alt=""
@@ -1720,7 +1761,7 @@
             ><span class="text-[2vw]">下さい！</span>
           </h2>
 
-          <div class="relative">
+          <div class="relative font-bold">
             <img
               src="/img/problem-pit.png"
               alt=""
@@ -1798,17 +1839,17 @@
             <img
               src="/img/cta-img-pit1.png"
               alt=""
-              class="absolute w-[5.8vw] bottom-[0.2vw] left-[-0.2vw]"
+              class="absolute w-[5.5vw] bottom-[0.2vw] left-[0vw]"
             />
             <img
               src="/img/cta-img-pit2.png"
               alt=""
-              class="absolute w-[2vw] bottom-[-1vw] left-[30vw]"
+              class="absolute w-[2vw] bottom-[-1vw] left-[30vw] z-10"
             />
             <img
               src="/img/cta-img-pit3.png"
               alt=""
-              class="absolute w-[5.5vw] bottom-[7.5vw] right-[-1.5vw]"
+              class="absolute w-[6vw] bottom-[8vw] right-[-2vw]"
             />
             <p
               class="flex items-end text-[2vw] font-bold text-center leading-none bg-gradient-to-b from-transparent from-80% to-[#ffde59] w-fit m-auto"
@@ -3463,7 +3504,7 @@
                       type="submit"
                       name="button"
                       value="送信"
-                      class="rounded-lg bg-gradient-to-r from-[#0cc0df] to-[#ffde59] text-white w-full py-[1.1vw] mt-[1.2vw] text-[1.1vw] hover:bg-yellow-500 duration-200 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
+                      class="rounded-lg bg-gradient-to-l from-[#ff914d] to-[#ffde59] text-white w-full py-[1.1vw] mt-[1.2vw] text-[1.1vw] hover:bg-yellow-500 duration-200 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)]"
                     >
                       無料相談を送る
                     </button>
@@ -3640,14 +3681,21 @@
       .getElementById("templete-btn")
       .addEventListener("click", function () {
         document.getElementById("msg").value =
-          "①ジャンル\n②LP有無やURL\n③ご予算\n④運用期間\n⑤目標数値\n⑥お問い合わせ詳細など";
+          "①ジャンル→\n②LP有無やURL→\n③ご予算→\n④運用期間→\n⑤目標数値→\n⑥お問い合わせ詳細↓";
       });
 
     document
       .getElementById("templete-btn2")
       .addEventListener("click", function () {
         document.getElementById("msg2").value =
-          "①ジャンル\n②LP有無やURL\n③ご予算\n④運用期間\n⑤目標数値\n⑥お問い合わせ詳細など";
+          "①ジャンル→\n②LP有無やURL→\n③ご予算→\n④運用期間→\n⑤目標数値→\n⑥お問い合わせ詳細↓";
+      });
+
+    document
+      .getElementById("templete-btn3")
+      .addEventListener("click", function () {
+        document.getElementById("msg3").value =
+          "①ジャンル→\n②LP有無やURL→\n③ご予算→\n④運用期間→\n⑤目標数値→\n⑥お問い合わせ詳細↓";
       });
 
     // 切り分けプランアコーディオン
