@@ -36,6 +36,10 @@ body {
   -webkit-text-stroke-color: black;
 }
 
+.vertical-text {
+  writing-mode: vertical-lr;
+}
+
 #media-icon:hover img {
   transition: transform 1s;
   transform: rotateY(360deg);
