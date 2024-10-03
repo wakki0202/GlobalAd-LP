@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>グローバルアド</title>
   </head>
+
   <body>
     <header id="header" class="w-full bg-white fixed z-[70]">
       <div
@@ -89,11 +90,11 @@
       id="TOP"
       class="bg-[#ffde59] bg-[url('img/top-bg.png')] text-white bg-cover pt-12"
     >
-      <div class="w-[91vw] m-auto flex justify-between">
+      <div class="w-[91vw] m-auto flex justify-between relative">
         <a
           target="_blank"
           href="https://chatgpt.com/g/g-arJH8Ojh6-kuroharuato-sahisushuo-ming-aiasisutanto-zhu-huioriera"
-          class="absolute bottom-[12vw] left-[6vw] rounded-full shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0)] hover:shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 z-20"
+          class="absolute bottom-[5vw] left-[2vw] rounded-full shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0)] hover:shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 z-20"
         >
           <div class="relative">
             <div class="absolute top-[2vw] left-[1.3vw] text-[0.8vw]">
@@ -257,6 +258,7 @@
             </p>
             <form class="text-black mt-[1.2vw]"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSda51uJjuWPTq7aPTo-BzMuEdk05fT43S02qCRBVauGkhpVPw/formResponse"
+            method="post" target="hidden_iframe" onsubmit="submitted=true;"
             >
               <div class="flex flex-col gap-[1.1vw]">
                 <div class="border-2 border-gray-300 rounded-md p-[0.35vw]">
@@ -301,6 +303,7 @@
                     type="text"
                     name="entry.1648297530"
                     placeholder="例）info@fioriera.co.jp"
+                    required
                     class="rounded-xl w-full outline-none text-[1vw] leading-none placeholder-gray-300"
                   />
                 </div>
@@ -342,7 +345,7 @@
               <button
                 type="button"
                 id="templete-btn"
-                class="inline-block w-fit hover:text-blue-600 duration-200 underline"
+                class="inline-block w-fit hover:text-blue-600 duration-200 underline  text-[1.1vw]"
               >
                 テンプレートをコピーして使う
               </button>
@@ -350,6 +353,7 @@
                 id="cta-btn"
                 type="submit"
                 name="button"
+                onclick="rset(this.form)"
                 value="送信"
                 class="rounded-lg bg-gradient-to-l from-[#ff914d] to-[#ffde59] text-white w-full text-[1.4vw] py-[0.83vw] leading-none mt-[1vw] hover:bg-yellow-500 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)] flex gap-[0.4vw] items-center justify-center"
               >
@@ -364,6 +368,20 @@
                 />
               </button>
             </form>
+            <script>var submitted = false;
+              function rset(fr) {
+    const email = document.getElementById('email').value; // emailフィールドの値を取得
+    if (email) { // 値が空でない場合のみ実行
+        fr.submit();
+        fr.reset();
+        alert("送信しました");
+    } else {
+        alert("メールアドレスを入力してください。"); // 値が空の場合のアラート
+    }
+}
+
+            </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='index.html';}"></iframe>
           </div>
         </div>
       </div>
@@ -380,7 +398,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>GDS/GDA</p>
+            <p class="text-[1.1vw]">GDS/GDA</p>
           </div>
           <div class="">
             <img
@@ -388,7 +406,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Instagram</p>
+            <p class="text-[1.1vw]">Instagram</p>
           </div>
           <div class="">
             <img
@@ -396,7 +414,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Line</p>
+            <p class="text-[1.1vw]">Line</p>
           </div>
           <div class="">
             <img
@@ -404,7 +422,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Tiktok</p>
+            <p class="text-[1.1vw]">Tiktok</p>
           </div>
           <div class="">
             <img
@@ -412,7 +430,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>X</p>
+            <p class="text-[1.1vw]">X</p>
           </div>
           <div class="">
             <img
@@ -420,7 +438,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>YDS/YDA</p>
+            <p class="text-[1.1vw]">YDS/YDA</p>
           </div>
           <div class="">
             <img
@@ -428,7 +446,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Youtube</p>
+            <p class="text-[1.1vw]">Youtube</p>
           </div>
           <div class="">
             <img
@@ -436,7 +454,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Facebook</p>
+            <p class="text-[1.1vw]">Facebook</p>
           </div>
           <div class="">
             <img
@@ -444,7 +462,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Alibaba</p>
+            <p class="text-[1.1vw]">Alibaba</p>
           </div>
           <div class="">
             <img
@@ -452,7 +470,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Amazon</p>
+            <p class="text-[1.1vw]">Amazon</p>
           </div>
           <div class="">
             <img
@@ -460,7 +478,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Cacao</p>
+            <p class="text-[1.1vw]">Cacao</p>
           </div>
           <div class="">
             <img
@@ -468,7 +486,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Naver</p>
+            <p class="text-[1.1vw]">Naver</p>
           </div>
           <div class="">
             <img
@@ -476,7 +494,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Spotify</p>
+            <p class="text-[1.1vw]">Spotify</p>
           </div>
           <div class="">
             <img
@@ -484,7 +502,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>wichat</p>
+            <p class="text-[1.1vw]">wichat</p>
           </div>
           <div class="">
             <img
@@ -492,7 +510,7 @@
               alt=""
               class="w-[6vw] m-auto aspect-square"
             />
-            <p>Yahoo!</p>
+            <p class="text-[1.1vw]">Yahoo!</p>
           </div>
         </div>
       </div>
@@ -500,7 +518,7 @@
 
     <!-- main-wrap -->
     <div id="main-wrap">
-      <div id="fixed-contactbox" class="fixed top-0 z-10 border-l-2">
+      <div id="fixed-contactbox" class="fixed top-0 z-10 border-l-2 hidden md:block">
         <div
           class="bg-white h-screen w-[25vw] pb-[0vw] flex items-center justify-center text-white relative z-20 pt-[4.2vw]"
         >
@@ -558,7 +576,7 @@
                 相談程度でも多数頂戴しています！
               </p>
               <form class="text-black pt-[5.5vw]"
-              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSda51uJjuWPTq7aPTo-BzMuEdk05fT43S02qCRBVauGkhpVPw/formResponse">
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSda51uJjuWPTq7aPTo-BzMuEdk05fT43S02qCRBVauGkhpVPw/formResponse" method="post" target="hidden_iframe2" onsubmit="submitted2=true;">
                 <div class="text-black flex flex-col gap-[0.8vw]">
                   <div class="border-2 border-gray-300 rounded-md p-[0.45vw]">
                     <p
@@ -598,7 +616,8 @@
                       メールアドレス
                     </p>
                     <input
-                      id="email"
+                      id="email2"
+                      required
                       type="text"
                       name="entry.1648297530"
                       placeholder="info@fioriera.co.jp"
@@ -639,7 +658,7 @@
                 <button
                   type="button"
                   id="templete-btn3"
-                  class="inline-block w-fit hover:text-blue-600 duration-200 underline"
+                  class="inline-block w-fit hover:text-blue-600 duration-200 underline text-[1.1vw]"
                 >
                   テンプレートをコピーして使う
                 </button>
@@ -647,6 +666,7 @@
                   id="cta-btn"
                   type="submit"
                   name="button"
+                  onclick="rset2(this.form)"
                   value="送信"
                   class="rounded-lg bg-gradient-to-l from-[#ff914d] to-[#ffde59] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)] flex gap-[0.4vw] items-center justify-center"
                 >
@@ -661,12 +681,26 @@
                   />
                 </button>
               </form>
+              <script>var submitted2 = false;
+                function rset2(fr) {
+      const email = document.getElementById('email2').value; // emailフィールドの値を取得
+      if (email) { // 値が空でない場合のみ実行
+          fr.submit();
+          fr.reset();
+          alert("送信しました");
+      } else {
+          alert("メールアドレスを入力してください。"); // 値が空の場合のアラート
+      }
+  }
+  
+              </script>
+          <iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" onload="if(submitted2){window.location='index.html';}"></iframe>
             </div>
           </div>
         </div>
       </div>
 
-      <section class="w-9/12 relative">
+      <section class="w-[95%] m-auto md:w-9/12 md:m-0 relative">
         <img
           src="/img/after-top-effect.png"
           alt=""
@@ -715,7 +749,7 @@
         </div>
       </section>
 
-      <section class="w-9/12">
+      <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
         <div id="plan" class="w-11/12 m-auto bg-[#faf9f9] pt-[3vw] relative">
           <img
             src="/img/bg-effect1.png"
@@ -1222,14 +1256,14 @@
             </p>
             <div class="flex justify-center gap-[2vw] pt-[1.4vw]">
               <div class="relative z-50">
-                <p class="text-center">ー【最短5分】電話見積もりも受付中!!ー</p>
+                <p class="text-center text-[1.1vw]">ー【最短5分】電話見積もりも受付中!!ー</p>
                 <a
                   href="tel:03-6826-0562"
                   class="block bg-[#ffde59] border-2 border-black relative z-50 transform hover:translate-x-[0.25vw] hover:translate-y-[0.22vw] duration-200"
                 >
                   <div class="flex items-center relative">
                     <img src="/img/tel-icon.png" alt="" class="w-[4.6vw]" />
-                    <p class="flex flex-col items-center">
+                    <p class="flex flex-col items-center text-[1.1vw]">
                       <span class="font-bold text-[2.5vw] leading-none"
                         >03-6826-0562</span
                       >
@@ -1242,7 +1276,7 @@
                 ></div>
               </div>
               <div class="relative z-50">
-                <p class="text-center">
+                <p class="text-center text-[1.1vw]">
                   ー【簡単30秒】フォーム相談はコチラ!!ー
                 </p>
                 <a
@@ -1252,7 +1286,7 @@
                 >
                   <div class="flex items-center">
                     <img src="/img/mail-icon.png" alt="" class="w-[4.6vw]" />
-                    <p class="flex flex-col items-center">
+                    <p class="flex flex-col items-center text-[1.1vw]">
                       <span class="font-bold text-[1.8vw] leading-none"
                         >無料相談はコチラ！</span
                       >
@@ -1268,7 +1302,7 @@
           </div>
         </div>
       </section>
-      <section class="w-9/12">
+      <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
         <div class="w-11/12 bg-[#faf9f9] mt-[4vw] m-auto relative">
           <img
             src="/img/bg-effect1.png"
@@ -1500,7 +1534,7 @@
           />
         </div>
       </section>
-      <section id="comparison" class="w-9/12">
+      <section id="comparison" class="w-[95%] m-auto md:w-9/12 md:m-0 ">
         <div class="m-auto mt-[5vw] bg-[#faf9f9]">
           <h2 class="text-center text-[3vw] font-bold">
             <span class="text-[2.4vw]">ほか</span>広告代理店<span
@@ -1673,14 +1707,14 @@
             </p>
             <div class="flex justify-center gap-[2vw] pt-[1.4vw]">
               <div class="relative z-50">
-                <p class="text-center">ー【最短5分】電話見積もりも受付中!!ー</p>
+                <p class="text-center text-[1.1vw]">ー【最短5分】電話見積もりも受付中!!ー</p>
                 <a
                   href="tel:03-6826-0562"
                   class="block bg-[#ffde59] border-2 border-black relative z-50 transform hover:translate-x-[0.25vw] hover:translate-y-[0.22vw] duration-200"
                 >
                   <div class="flex items-center relative">
                     <img src="/img/tel-icon.png" alt="" class="w-[4.6vw]" />
-                    <p class="flex flex-col items-center">
+                    <p class="flex flex-col items-center text-[1.1vw]">
                       <span class="font-bold text-[2.5vw] leading-none"
                         >03-6826-0562</span
                       >
@@ -1693,7 +1727,7 @@
                 ></div>
               </div>
               <div class="relative z-50">
-                <p class="text-center">
+                <p class="text-center text-[1.1vw]">
                   ー【簡単30秒】フォーム相談はコチラ!!ー
                 </p>
                 <a
@@ -1703,7 +1737,7 @@
                 >
                   <div class="flex items-center">
                     <img src="/img/mail-icon.png" alt="" class="w-[4.6vw]" />
-                    <p class="flex flex-col items-center">
+                    <p class="flex flex-col items-center text-[1.1vw]">
                       <span class="font-bold text-[1.8vw] leading-none"
                         >無料相談はコチラ！</span
                       >
@@ -1719,7 +1753,7 @@
           </div>
         </div>
       </section>
-      <section class="w-9/12">
+      <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
         <div class="w-11/12 m-auto bg-[#faf9f9] mt-[4vw] relative">
           <img
             src="/img/bg-effect2.png"
@@ -1809,7 +1843,7 @@
           </div>
         </div>
       </section>
-      <section class="w-9/12">
+      <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
         <div class="w-11/12 m-auto bg-[#faf9f9] mt-[4vw] font-bold relative">
           <img
             src="/img/bg-effect2.png"
@@ -1977,7 +2011,7 @@
           </div>
         </div>
       </section>
-      <section class="w-9/12">
+      <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
         <div class="w-11/12 m-auto bg-[#faf9f9] mt-[3vw] relative">
           <img
             src="/img/bg-effect1.png"
@@ -2119,14 +2153,14 @@
             </p>
             <div class="flex justify-center gap-[2vw] pt-[1.4vw]">
               <div class="relative z-50">
-                <p class="text-center">ー【最短5分】電話見積もりも受付中!!ー</p>
+                <p class="text-center text-[1.1vw]">ー【最短5分】電話見積もりも受付中!!ー</p>
                 <a
                   href="tel:03-6826-0562"
                   class="block bg-[#ffde59] border-2 border-black relative z-50 transform hover:translate-x-[0.25vw] hover:translate-y-[0.22vw] duration-200"
                 >
                   <div class="flex items-center relative">
                     <img src="/img/tel-icon.png" alt="" class="w-[4.6vw]" />
-                    <p class="flex flex-col items-center">
+                    <p class="flex flex-col items-center text-[1.1vw]">
                       <span class="font-bold text-[2.5vw] leading-none"
                         >03-6826-0562</span
                       >
@@ -2139,7 +2173,7 @@
                 ></div>
               </div>
               <div class="relative z-50">
-                <p class="text-center">
+                <p class="text-center text-[1.1vw]">
                   ー【簡単30秒】フォーム相談はコチラ!!ー
                 </p>
                 <a
@@ -2149,7 +2183,7 @@
                 >
                   <div class="flex items-center">
                     <img src="/img/mail-icon.png" alt="" class="w-[4.6vw]" />
-                    <p class="flex flex-col items-center">
+                    <p class="flex flex-col items-center text-[1.1vw]">
                       <span class="font-bold text-[1.8vw] leading-none"
                         >無料相談はコチラ！</span
                       >
@@ -2166,7 +2200,7 @@
         </div>
       </section>
       <section id="faq" class="w-full bg-[#faf9f9]">
-        <div class="w-9/12">
+        <div class="w-[95%] m-auto md:w-9/12 md:m-0 ">
           <div class="w-[100%] m-auto bg-[#faf9f9] relative pt-[6.6vw]">
             <div class="w-[100%] m-auto border-gray-400 rounded-xl py-[1.1vw]">
               <h2
@@ -2581,7 +2615,7 @@
         </div>
       </section>
       <section>
-        <div class="w-9/12 mt-[2vw] relative">
+        <div class="w-[95%] m-auto md:w-9/12 md:m-0  md:mt-[2vw] relative">
           <img
             src="/img/bg-effect2.png"
             alt=""
@@ -2622,7 +2656,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-01"
                 ><img
                   src="/img/googleAdsLogo.png"
@@ -2649,7 +2683,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-02"
                 ><img
                   src="/img/yahooLogo.png"
@@ -2672,7 +2706,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-03"
                 ><img
                   src="/img/facebook-logo.png"
@@ -2696,7 +2730,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-04"
                 ><img
                   src="/img/instaLogo.png"
@@ -2718,7 +2752,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-05"
                 ><img
                   src="/img/linelogo.png"
@@ -2740,7 +2774,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-06"
                 ><img
                   src="/img/youtube-logo.png"
@@ -2764,7 +2798,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-07"
                 ><img
                   src="/img/tiktok-logo.png"
@@ -2786,7 +2820,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-08"
                 ><img
                   src="/img/baide-logo.png"
@@ -2809,7 +2843,7 @@
                 name="TAB"
                 class="tab-switch"
               /><label
-                class="tab-label flex justify-center gap-[0.5vw] items-center"
+                class="tab-label flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-09"
                 ><img
                   src="/img/logo-naver.jpg"
@@ -2834,7 +2868,7 @@
                 name="TAB"
                 class="tab-switch w-4/12"
               /><label
-                class="tab-label w-4/12 flex justify-center gap-[0.5vw] items-center"
+                class="tab-label w-4/12 flex justify-center gap-[0.5vw] items-center text-[1.1vw]"
                 for="TAB-10"
                 ><img
                   src="/img/linkedin-logo.png"
@@ -2886,7 +2920,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-011">広告代理店</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-011">広告代理店</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   広告代理店<span class="text-[1vw]">とは？</span>
@@ -2908,7 +2942,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-012">広告費</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-012">広告費</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   広告費<span class="text-[1vw]">とは？</span>
@@ -2931,7 +2965,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-013">運用手数料</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-013">運用手数料</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   運用手数料<span class="text-[1vw]">とは？</span>
@@ -2955,7 +2989,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-014">乗り換え</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-014">乗り換え</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   乗り換え<span class="text-[1vw]">とは？</span>
@@ -2977,7 +3011,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-015">キャンペーン</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-015">キャンペーン</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   キャンペーン<span class="text-[1vw]">とは？</span>
@@ -2993,7 +3027,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-016">最低運用金額</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-016">最低運用金額</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   最低運用金額<span class="text-[1vw]">とは？</span>
@@ -3018,7 +3052,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-017">最低運用手数料</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-017">最低運用手数料</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   最低運用手数料<span class="text-[1vw]">とは？</span>
@@ -3039,7 +3073,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-018">アカウント診断</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-018">アカウント診断</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   アカウント診断<span class="text-[1vw]">とは？</span>
@@ -3060,7 +3094,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-019">品質スコア</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-019">品質スコア</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   品質スコア<span class="text-[1vw]">とは？</span>
@@ -3084,7 +3118,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-020">アカウント</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-020">アカウント</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   アカウント<span class="text-[1vw]">とは？</span>
@@ -3101,7 +3135,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-021">広告グループ</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-021">広告グループ</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   広告グループ<span class="text-[1vw]">とは？</span>
@@ -3116,7 +3150,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-022">競合分析</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-022">競合分析</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   競合分析<span class="text-[1vw]">とは？</span>
@@ -3134,7 +3168,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-023">キーワード</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-023">キーワード</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   キーワード<span class="text-[1vw]">とは？</span>
@@ -3157,7 +3191,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-024">検索クエリ</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-024">検索クエリ</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   検索クエリ<span class="text-[1vw]">とは？</span>
@@ -3173,7 +3207,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-025">入札単価</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-025">入札単価</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   入札単価<span class="text-[1vw]">とは？</span>
@@ -3190,7 +3224,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-026">予算</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-026">予算</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   予算<span class="text-[1vw]">とは？</span>
@@ -3206,7 +3240,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-027">成果</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-027">成果</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   成果<span class="text-[1vw]">とは？</span>
@@ -3246,7 +3280,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-028" class=""
+              /><label class="tab-label text-[1.1vw]" for="TAB-028" class=""
                 ><span class="text-[0.78vw] pr-[0.2vw] inline-block"
                   >インプレッション(Impression/ Imp)</span
                 ></label
@@ -3267,7 +3301,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-029">CTs（クリック数）</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-029">CTs（クリック数）</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   CTs（クリック数）<span class="text-[1vw]">とは？</span>
@@ -3282,7 +3316,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-030">CTR（クリック率）</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-030">CTR（クリック率）</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   CTR（クリック率）<span class="text-[1vw]">とは？</span>
@@ -3302,7 +3336,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-031"
+              /><label class="tab-label text-[1.1vw]" for="TAB-031"
                 >CPC（クリック単価）</label
               >
               <div class="tab-content">
@@ -3323,7 +3357,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-032"
+              /><label class="tab-label text-[1.1vw]" for="TAB-032"
                 >CV（コンバージョン）</label
               >
               <div class="tab-content">
@@ -3343,7 +3377,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-033"
+              /><label class="tab-label text-[1.1vw]" for="TAB-033"
                 >CVs（コンバージョン数）</label
               >
               <div class="tab-content">
@@ -3366,7 +3400,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-034"
+              /><label class="tab-label text-[1.1vw]" for="TAB-034"
                 >CVR（コンバージョン率）</label
               >
               <div class="tab-content">
@@ -3386,7 +3420,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-035">CPA（獲得単価）</label>
+              /><label class="tab-label text-[1.1vw]" for="TAB-035">CPA（獲得単価）</label>
               <div class="tab-content">
                 <h4 class="text-[1.3vw] font-bold">
                   CPA（獲得単価）<span class="text-[1vw]">とは？</span>
@@ -3404,7 +3438,7 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-              /><label class="tab-label" for="TAB-036"
+              /><label class="tab-label text-[1.1vw]" for="TAB-036"
                 >CPO（注文獲得単価）</label
               >
               <div class="tab-content">
@@ -3427,7 +3461,7 @@
         </div>
       </section>
       <section>
-        <div class="w-9/12 mt-[5vw] relative">
+        <div class="w-[95%] m-auto md:w-9/12 md:m-0  md:mt-[5vw] relative">
           <img
             src="/img/bg-effect2.png"
             alt=""
@@ -3451,7 +3485,7 @@
                   alt=""
                   class="w-[4vw] m-auto"
                 />
-                <h3 class="text-center font-bold mt-[0.3vw]">
+                <h3 class="text-center font-bold mt-[0.3vw]  text-[1.1vw]">
                   Google Analytics
                 </h3>
                 <button
@@ -3494,7 +3528,7 @@
                   alt=""
                   class="w-[4vw] m-auto"
                 />
-                <h3 class="text-center font-bold mt-[0.3vw]">
+                <h3 class="text-center font-bold mt-[0.3vw]  text-[1.1vw]">
                   Google Search Console
                 </h3>
                 <button
@@ -3537,7 +3571,7 @@
                   alt=""
                   class="w-[4vw] m-auto"
                 />
-                <h3 class="text-center font-bold mt-[0.3vw]">
+                <h3 class="text-center font-bold mt-[0.3vw]  text-[1.1vw]">
                   Google Tag Manager
                 </h3>
                 <button
@@ -3577,7 +3611,7 @@
               </div>
               <div class="w-[48%] bg-[#f4f4f4] py-[1.8vw] rounded-[0.4vw]">
                 <img src="/img/logo-ahrefs.png" alt="" class="w-[4vw] m-auto" />
-                <h3 class="text-center font-bold mt-[0.3vw]">Ahrefs</h3>
+                <h3 class="text-center font-bold mt-[0.3vw]  text-[1.1vw]">Ahrefs</h3>
                 <button
                   class="accordion-header w-fit text-left font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between relative left-[22vw] bottom-[-1.8vw]"
                 >
@@ -3622,7 +3656,7 @@
       <section
         class="bg-[#ffde59] bg-[url('img/top-bg.png')] text-white bg-cover py-[2vw] mt-[3vw]"
       >
-        <div class="w-9/12 flex justify-between">
+        <div class="w-[95%] m-auto md:w-9/12 md:m-0  flex justify-between">
           <div class="relative w-[80.7vw]">
             <div class="flex pt-[2vw] gap-[2vw] justify-center">
               <div class="relative">
@@ -3725,7 +3759,7 @@
       </section>
 
       <section id="contact" class="w-full">
-        <div class="w-9/12">
+        <div class="w-[95%] m-auto md:w-9/12 md:m-0 ">
           <div
             class="w-[95%] m-auto relative pb-[1.8vw] rounded-bl-xl rounded-br-xl"
           >
@@ -3753,7 +3787,7 @@
                 </p> -->
 
                   <form
-                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSda51uJjuWPTq7aPTo-BzMuEdk05fT43S02qCRBVauGkhpVPw/formResponse">
+                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSda51uJjuWPTq7aPTo-BzMuEdk05fT43S02qCRBVauGkhpVPw/formResponse" method="post" target="hidden_iframe3" onsubmit="submitted3=true;">
                     <div class="text-black flex flex-col gap-[0.8vw]">
                       <div
                         class="border-2 border-gray-300 rounded-md p-[0.45vw]"
@@ -3799,8 +3833,9 @@
                           メールアドレス
                         </p>
                         <input
-                          id="email"
+                          id="email3"
                           type="text"
+                          required
                           name="entry.1648297530"
                           placeholder="info@fioriera.co.jp"
                           class="rounded-xl w-full outline-none text-[1.1vw] bg-gray-100"
@@ -3847,7 +3882,7 @@
                     <button
                       type="button"
                       id="templete-btn2"
-                      class="inline-block w-fit text-black underline"
+                      class="inline-block w-fit text-black underline text-[1.1vw]"
                     >
                       テンプレートをコピーして使う
                     </button>
@@ -3855,6 +3890,7 @@
                       id="cta-btn"
                       type="submit"
                       name="button"
+                      onclick="rset3(this.form)"
                       value="送信"
                       class="rounded-lg bg-gradient-to-l from-[#ff914d] to-[#ffde59] text-white w-full py-[1.1vw] mt-[1.2vw] text-[1.3vw] hover:bg-yellow-500 duration-200 shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)] flex gap-[0.4vw] items-center justify-center"
                     >
@@ -3869,6 +3905,20 @@
                       />
                     </button>
                   </form>
+                  <script>var submitted3 = false;
+                    function rset3(fr) {
+          const email = document.getElementById('email3').value; // emailフィールドの値を取得
+          if (email) { // 値が空でない場合のみ実行
+              fr.submit();
+              fr.reset();
+              alert("送信しました");
+          } else {
+              alert("メールアドレスを入力してください。"); // 値が空の場合のアラート
+          }
+      }
+      
+                  </script>
+              <iframe name="hidden_iframe3" id="hidden_iframe3" style="display:none;" onload="if(submitted3){window.location='index.html';}"></iframe>
                 </div>
               </div>
             </div>
@@ -3903,7 +3953,7 @@
     </div>
 
     <footer
-      class="w-9/12 text-black py-1 text-[1.1vw] flex flex-col justify-center items-center"
+      class="w-[95%] m-auto md:w-9/12 md:m-0  text-black py-1 text-[1.1vw] flex flex-col justify-center items-center"
     >
       <a target="_blank" href="https://fioriera.co.jp/tokusyo/"
         >特定商取引法に基づく表記</a
@@ -3915,9 +3965,11 @@
         >Copyright© 株式会社フィオリエラ All Rights Reserved.</small
       >
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
     let lastScrollTop = 0;
     const header = document.getElementById("header");
