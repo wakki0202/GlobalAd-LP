@@ -242,9 +242,6 @@ body {
   border: 2px black solid;
 }
 
-.tab-label:not(:last-of-type) {
-  margin-right: 5px;
-}
 .tab-content {
   width: 100%;
   height: 0;
@@ -297,4 +294,38 @@ body {
 
 .card:hover .front {
   transform: rotateY(0);
+}
+
+@media screen and (max-width: 756px) {
+  .tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  /* 480px以下に適用されるCSS（スマホ用） */
+  .tab-label::after {
+    position: absolute;
+    bottom: 0.2vw;
+    right: 0.1vw;
+    content: "+";
+    width: 3vw;
+    height: 3vw;
+    line-height: 0;
+    padding-top: 0.7vw;
+    margin-left: 0.6vw;
+    background-color: #fe2c55;
+    color: white;
+    border: 2px black solid;
+  }
+
+  .tab-switch:checked + .tab-label::after {
+    font-size: 2vw;
+    content: "ー";
+    line-height: 0;
+    padding-top: 0.7vw;
+    margin-left: 0.25vw;
+    background-color: #fe2c55;
+    color: white;
+    border: 2px black solid;
+  }
 }
