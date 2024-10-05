@@ -297,6 +297,19 @@ body {
 }
 
 @media screen and (max-width: 756px) {
+  .arrow-down::after {
+    position: relative;
+    top: 2.8vw;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    transform: rotate(135deg);
+    margin: 0 auto;
+  }
+
   .tab-wrap {
     display: flex;
     flex-wrap: wrap;
