@@ -28,7 +28,11 @@ body {
 .font-bold {
   font-family: "Noto Sans JP", serif;
   font-weight: 900;
-  font-style: normal;
+}
+
+.text-red-stroke {
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #ff3131;
 }
 
 .text-stroke {
