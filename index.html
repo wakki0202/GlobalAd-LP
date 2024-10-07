@@ -20,13 +20,13 @@
   </head>
 
   <body>
-    <header id="header" class="w-[100vw] md:w-full bg-white fixed z-[70] py-[1vw] md:py-0">
+    <header id="header" class="w-[100vw] md:w-full bg-white fixed z-[70] py-[2vw] md:py-0">
       <div
-        class="flex justify-between items-center gap-[2vw] m-auto py-[0.3vw] text-black"
+        class="flex justify-between items-center gap-[1vw] md:gap-[2vw] m-auto py-[0.3vw] text-black"
       >
-        <div class="ml-[2vw]">
+        <div class="ml-[0.5vw] md:ml-[2vw]">
           <p class="">
-            <span class="text-[2.3vw] md:text-[1.05vw] leading-none flex flex-col items-center justify-center"
+            <span class="text-[2.2vw] md:text-[1.05vw] leading-none flex flex-col items-center justify-center"
               >
               <span>
               <span class="font-bold">格安広告運用代行<span class="text-red-500">「手数料10%」</span></span
@@ -40,13 +40,15 @@
             >
           </p>
         </div>
-        <div class="flex gap-[1.7vw] md:gap-[1.4vw] mr-[1.6vw] items-center">
+        <div class="flex gap-[1.6vw] md:gap-[1.4vw] mr-[1.6vw] items-center">
           
-          <a href="#contact" class="text-[2.5vw] md:text-[1.4vw] font-bold flex flex-col items-center relative">AIに相談する<span class="absolute text-[1.2vw] md:text-[0.68vw] leading-none top-[3.5vw] md:top-[2vw]">※ページが切り替わります</span></a>
-          <a href="#plan" class="text-[2.5vw] md:text-[1.4vw] font-bold">料金</a>
-          <a href="#media" class="text-[2.5vw] md:text-[1.4vw] font-bold">対応媒体</a>
-          <a href="#comparison" class="text-[2.5vw] md:text-[1.4vw] font-bold">他社比較</a>
-          <a href="#faq" class="text-[2.5vw] md:text-[1.4vw] font-bold">FAQ</a>
+          <a href="#TOP" class="text-[3.2vw] md:text-[1.4vw] font-bold flex flex-col items-center relative">AIに相談<span class="hidden md:block">する</span>
+            <!-- <span class="absolute text-[1.4vw] md:text-[0.68vw] leading-none top-[4vw] md:top-[2vw]">※ページが切り替わります</span> -->
+          </a>
+          <a href="#plan" class="text-[3.2vw] md:text-[1.4vw] font-bold">料金</a>
+          <a href="#media" class="text-[3.2vw] md:text-[1.4vw] font-bold">対応媒体</a>
+          <a href="#comparison" class="text-[3.2vw] md:text-[1.4vw] font-bold">他社比較</a>
+          <a href="#faq" class="text-[3.2vw] md:text-[1.4vw] font-bold">FAQ</a>
           <!-- 電話見積もり -->
           <div class="relative hidden md:block">
             <p class="text-[0.8vw]">ー【最短5分】電話見積もりも受付中!!ー</p>
@@ -94,16 +96,15 @@
     <!-- MV -->
     <section
       id="TOP"
-      class="bg-[#ffde59] bg-[url('img/top-bg.png')] text-white bg-cover pt-[30vw] md:pt-[2vw]"
+      class="bg-[#ffde59] bg-[url('img/top-bg.png')] text-white bg-cover pt-[15vw] md:pt-[2vw]"
     >
       <div class="w-full md:w-[91vw] m-auto flex flex-col md:flex-row justify-between relative">
 
         <!-- AIボタン -->
-        <div class="absolute top-[54vw] md:top-[30vw] left-[2vw] md:left-[0vw]">
         <a
           target="_blank"
           href="https://chatgpt.com/g/g-arJH8Ojh6-kuroharuato-sahisushuo-ming-aiasisutanto-zhu-huioriera"
-          class=" rounded-full shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0)] hover:shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 z-20"
+          class="absolute top-[54vw] md:top-[30vw] left-[2vw] md:left-[0vw] rounded-full shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0)] hover:shadow-[0.2vw_0.2vw_0.38vw_0.13vw_rgba(0,0,0,0.5)] duration-200 z-20"
         >
           <div class="relative">
             <div class="absolute top-[2vw] left-[1.3vw] text-[2.5vw] md:text-[0.8vw]">
@@ -125,8 +126,8 @@
             <img src="/img/to_ai.png" alt="" class="w-[20vw] md:w-[10vw]" />
           </div>
         </a>
-        <p class="text-[1.5vw] md:text-[0.7vw] text-center text-black pt-[0.3vw] font-bold">※ページが切り替わります</p>
-      </div>
+        <p class="absolute top-[74vw] md:top-[40vw] left-[2.8vw] md:left-[1vw] text-[1.5vw] md:text-[0.7vw] text-center text-black pt-[0.3vw] font-bold">※ページが切り替わります</p>
+    
         <div class="relative w-[95vw] m-auto md:w-[80.7vw] md:m-0">
           <div class="flex pt-[5vw] gap-[2vw] justify-between md:justify-center">
             <div class="relative z-20">
@@ -536,7 +537,7 @@
       </div>
       <!-- 対応可能スライドショー -->
       <div class="hidden md:block">
-        <p class="text-black w-[90%] m-auto font-bold mt-[1.5vw]">
+        <p class="text-black w-[90%] m-auto font-bold mt-[1.5vw] text-[1.1vw] md:text-[1.6vw]">
           ▼下記、<span class="text-red-500">どれでも</span>広告運用できます!
         </p>
         <div class="slider py-[0.4vw] pt-[0.6vw] text-black text-center">
@@ -815,7 +816,7 @@
                 <button
                   type="button"
                   id="templete-btn3"
-                  class="inline-block w-fit hover:text-blue-600 duration-200 underline text-[1.1vw]"
+                  class="inline-block w-fit hover:text-[#ff3131] text-blue-600 duration-200 underline text-[1.1vw]"
                 >
                   テンプレートをコピーして使う
                 </button>
@@ -935,51 +936,51 @@
             </span>
             <span class="text-[4vw] md:text-[1.1vw]"> グローバルアドの広告運用代行 </span>
           </h2>
-          <div class="w-full md:w-9/12 m-auto relative">
-            <table class="w-auto m-auto border-separate border-spacing-[0.2vw]">
+          <div class="w-full md:w-10/12 m-auto relative">
+            <table class="w-auto md:w-full m-auto border-separate border-spacing-[0.2vw]">
               <tr>
                 <th></th>
                 <th
-                  class="border-[0.13vw] border-black bg-[#ffde59] text-white text-[3.4vw] md:text-[1.8vw] py-[0.4vw] px-[0.8vw]"
+                  class="border-[0.13vw] border-black bg-[#ffde59] text-white text-[3.4vw] md:text-[2.2vw] py-[0.4vw] px-[0.8vw]"
                 >
                   運用手数料
                 </th>
                 <th
-                  class="border-[0.13vw] border-black bg-[#ffde59] text-white  text-[3.4vw] md:text-[1.8vw] py-[0.4vw] px-[0.8vw]"
+                  class="border-[0.13vw] border-black bg-[#ffde59] text-white  text-[3.4vw] md:text-[2.2vw] py-[0.4vw] px-[0.8vw]"
                 >
                   契約期間
                 </th>
                 <th
-                  class="border-[0.13vw] border-black bg-[#ffde59] text-white  text-[3.4vw] md:text-[1.8vw] py-[0.4vw] px-[0.8vw]"
+                  class="border-[0.13vw] border-black bg-[#ffde59] text-white  text-[3.4vw] md:text-[2.2vw] py-[0.4vw] px-[0.8vw]"
                 >
                   初期費用
                 </th>
               </tr>
               <tr>
                 <td
-                  class="border-[0.13vw] border-black bg-[#ffde59] text-white text-center py-[0.4vw] px-[1vw]  text-[3.4vw] md:text-[1.8vw]"
+                  class="border-[0.13vw] border-black bg-[#ffde59] text-white text-center py-[0.4vw] px-[1vw]  text-[3.4vw] md:text-[2.2vw]"
                 >
                   まるっと<br />
                   お任せプラン
                 </td>
                 <td
-                  class="relative border-[0.13vw] border-black bg-[#ff3131] text-[#ffde59] text-center leading-normal py-[1.8vw]  text-[3.5vw] md:text-[1.3vw]"
+                  class="relative border-[0.13vw] border-black bg-[#ff3131] text-[#ffde59] text-center leading-normal py-[1.8vw]  text-[3.5vw] md:text-[1.8vw]"
                 >
                   業界最安水準!!<br />
                   <span
                     id="js-count"
-                    class="text-[12vw] md:text-[6.3vw] pt-[1vw] inline-block leading-[8vw] md:leading-[3vw] font-bold"
+                    class="text-[12vw] md:text-[7.5vw] pt-[1vw] inline-block leading-[8vw] md:leading-[3vw] font-bold"
                     >20</span
                   >
-                  <span class="text-[2.5vw]">%</span>
+                  <span class="text-[2.5vw] md:text-[3vw]">%</span>
 
                   <img
                     src="/img/price-down-logo.png"
                     alt=""
-                    class="absolute w-[8vw] md:w-[3.2vw] right-[-0.8vw] md:right-[-0.2vw] top-[7.5vw] md:top-[3.3vw]"
+                    class="absolute w-[8vw] md:w-[4vw] right-[-0.8vw] md:right-[0.2vw] top-[7.5vw] md:top-[3.8vw]"
                   />
                   <p
-                    class="flex items-center text-[2.6vw] md:text-[1.1vw] text-white absolute w-[4vw] right-[1.75vw] md:right-[-1.6vw] top-[9vw] md:top-[4vw] leading-none"
+                    class="flex items-center text-[2.6vw] md:text-[1.1vw] text-white absolute w-[4vw] right-[1.75vw] md:right-[-0.7vw] top-[9vw] md:top-[4.6vw] leading-none"
                   >
                     50
                     <span class="flex flex-col text-[1.6vw] md:text-[0.5vw] leading-none"
@@ -990,17 +991,17 @@
                   </p>
                 </td>
                 <td
-                  class="border-[0.13vw] border-black bg-white text-black text-center leading-none px-[1vw] text-[3.2vw] md:text-[1.3vw]"
+                  class="border-[0.13vw] border-black bg-white text-black text-center leading-none px-[1vw] text-[3.2vw] md:text-[2.2vw]"
                 >
                   縛りなし！<br />
-                  <span class="text-[10vw] md:text-[5vw]">1</span
-                  ><span class="text-[5vw] md:text-[2.4vw]">ヶ月〜</span>
+                  <span class="text-[10vw] md:text-[7vw]">1</span
+                  ><span class="text-[5vw] md:text-[3vw]">ヶ月〜</span>
                 </td>
                 <td
-                  class="border-[0.13vw] border-black bg-white text-black text-center leading-none text-[3.2vw] md:text-[1.3vw]"
+                  class="border-[0.13vw] border-black bg-white text-black text-center leading-none text-[3.2vw] md:text-[2.2vw]"
                 >
                   完全無料<br />
-                  <span class="text-[10vw] md:text-[5vw]">0</span
+                  <span class="text-[10vw] md:text-[7vw]">0</span
                   ><span class="text-[6vw] md:text-[3vw]">円</span>
                 </td>
               </tr>
@@ -1037,7 +1038,7 @@
             <p>＼最短即日【無料見積もり】はこちら！／</p>
             <a
               id="cta-btn"
-              href="#TOP"
+              href="#contact"
               class="flex items-center w-fit m-auto justify-center inline-block rounded-full text-white px-[2vw] py-[1vw] text-[5vw] md:text-[1.5vw] bg-gradient-to-l from-[#ff914d] to-[#ffde59] shadow-[0.24vw_0.24vw_0.28vw_0.13vw_rgba(0,0,0,0.4)] duration-200 hover:shadow-[0vw_0vw_0vw_0vw_rgba(0,0,0,0.2)] flex gap-[0.4vw] items-center justify-center"
               ><img
                 src="/img/btn-mail-icon.png"
@@ -1054,7 +1055,7 @@
               <p class="text-[2.4vw] md:text-[0.8vw]">
                 ※現在、電話相談(<a
                   href="tel:03-6826-0562"
-                  class="underline text-red-500 hover:text-blue-600 duration-200"
+                  class="underline hover:text-[#ff3131] text-blue-600 duration-200"
                   >03-6826-0562</a
                 >)も多数お受けしております。
               </p>
@@ -1132,8 +1133,9 @@
                   >品質改善ミーティング
                 </p>
               </div>
-              <p class="absolute bottom-0 right-0 text-[0.8vw]">※こちらをまるっと対応して手数料10%になります！</p>
+              
             </div>
+            <p class="text-[2.6vw] md:text-[1vw] text-right">※こちらをまるっと対応して手数料10%になります！</p>
 
             <div
               class="bg-[#ffde59] border-[0.13vw] border-black hover:border-red-500 duration-200 w-full m-auto mt-[7vw] md:mt-[3vw] pt-[6vw] pb-[4vw] md:pt-[2vw] md:pb-[0vw] relative"
@@ -1149,17 +1151,18 @@
               </p>
 
               <div class="relative">
-                <img src="/img/treat.png" alt="" class="w-[16vw] m-auto" />
+                <img src="/img/treat.png" alt="" class="w-[30vw] md:w-[16vw] m-auto" />
                 <p
-                  class="text-red-500 text-[3.4vw] md:text-[1.4vw] absolute z-10 bottom-[0.2vw] md:bottom-[1.5vw] left-[50%] translate-x-[-50%] w-full font-bold"
+                  class="text-red-500 text-[3.4vw] md:text-[1.4vw] absolute z-10 bottom-[2.2vw] md:bottom-[1.5vw] left-[50%] translate-x-[-50%] w-full font-bold"
                 >
                   その他のご相談もお気軽にお申し付けください！
                 </p>
               </div>
-              <div class="relative bottom-0 right-0 text-[0.8vw] text-left w-fit ml-auto">
-                <p>※基本、都度見積もりの対応業務です。</p>
-                <p>※条件次第で10%の範囲で対応できる場合もございます。</p>
-              </div>
+              
+            </div>
+            <div class="text-[2.6vw] md:text-[0.8vw] text-right">
+              <p>※基本、都度見積もりの対応業務です。</p>
+              <p>※条件次第で10%の範囲で対応できる場合もございます。</p>
             </div>
           </div>
           <div
@@ -1177,7 +1180,7 @@
                 class="media-icon flex flex-col items-center w-[20%] group"
               >
                 <img src="/img/youtube-logo2.png" class="w-[12vw] md:w-[6vw]" alt="" />
-                <h3 class="text-[2.4vw] md:text-[1.2vw]">Youtube</h3>
+                <h3 class="text-[2.4vw] md:text-[1.2vw]">YouTube</h3>
                 <div
                   class="absolute hidden group-hover:block w-[94.5vw] h-[42vw] md:w-[56.2vw] md:h-[20.3vw] rounded-[1.8vw] top-[0vw] left-[0vw] bg-[rgba(0,0,0,0)] opacity-0 group-hover:bg-[rgba(0,0,0,0.65)] group-hover:opacity-100 duration-200 delay-500"
                 >
@@ -1280,7 +1283,7 @@
                 class="media-icon flex flex-col items-center w-[20%] group"
               >
                 <img src="/img/yahooLogo.png" class="w-[12vw] md:w-[6vw]" alt="" />
-                <h3 class="text-[2.4vw] md:text-[1.2vw]">YDS/YDA</h3>
+                <h3 class="text-[2.4vw] md:text-[1.2vw]">Yahoo!</h3>
                 <div
                   class="absolute hidden group-hover:block w-[94.5vw] h-[42vw] md:w-[56.2vw] md:h-[20.3vw]  rounded-[1.8vw] top-[0vw] left-[0vw] bg-[rgba(0,0,0,0)] opacity-0 group-hover:bg-[rgba(0,0,0,0.65)] group-hover:opacity-100 duration-200 delay-500"
                 >
@@ -1295,7 +1298,7 @@
                 class="media-icon flex flex-col items-center w-[20%] group"
               >
                 <img src="/img/googleAdsLogo.png" class="w-[12vw] md:w-[6vw]" alt="" />
-                <h3 class="text-[2.4vw] md:text-[1.2vw]">GDS/GDA</h3>
+                <h3 class="text-[2.4vw] md:text-[1.2vw]">Google</h3>
                 <div
                   class="absolute hidden group-hover:block w-[94.5vw] h-[42vw] md:w-[56.2vw] md:h-[20.3vw]  rounded-[1.8vw] top-[0vw] left-[0vw] bg-[rgba(0,0,0,0)] opacity-0 group-hover:bg-[rgba(0,0,0,0.65)] group-hover:opacity-100 duration-200 delay-500"
                 >
@@ -1692,11 +1695,11 @@
                     <span class="flex flex-col items-center"> 初期費用</span
                     >無料
                   </h3>
-                  <p class="text-[2vw] md:text-[0.8vw] px-[0.6vw] pt-[0.8vw]">
+                  <p class="text-[2vw] md:text-[0.95vw] px-[0.6vw] pt-[0.8vw] md:pt-[0.15vw]">
                     広告運用代行サービスの利用に必要な費用は、10%の運用手数料のみ。初期費用も解約費用も無料(0円)で、「始めやすく終わりやすい」安心のサービス形態！
                   </p>
                   <p
-                    class="underline relative bottom-[3vw] md:bottom-[-1.3vw] right-[1vw] text-right text-[2vw] md:text-[1vw]"
+                    class="underline relative bottom-[3vw] md:bottom-[0.3vw] right-[1vw] text-right text-[2vw] md:text-[1vw]"
                   >
                     close
                   </p>
@@ -1750,11 +1753,11 @@
                     <span class="flex flex-col items-center"> 契約の縛り</span
                     >なし!
                   </h3>
-                  <p class="text-[1.7vw] md:text-[0.8vw] px-[0.6vw] pt-[0.8vw]">
+                  <p class="text-[1.7vw] md:text-[0.95vw] px-[0.6vw] pt-[0.8vw] md:pt-[0.2vw]">
                     契約は1カ月更新。よくある「最低契約期間3カ月」などはございません。市場の状況や経営状況に合わせて運用を停止するなど、戦略的な広告運用が実現できます。解約費用も無料(0円)です。
                   </p>
                   <p
-                    class="underline relative bottom-[-0.3vw] right-[1vw] text-right text-[2vw] md:text-[1vw]"
+                    class="underline relative bottom-[-0.3vw] md:bottom-[1.3vw] right-[1vw] text-right text-[2vw] md:text-[1vw]"
                   >
                     close
                   </p>
@@ -1790,7 +1793,7 @@
         </div>
       </section>
       <section id="comparison" class="w-full m-auto md:w-9/12 md:m-0 ">
-        <div class="m-auto mt-[5vw] bg-[#faf9f9]">
+        <div class="m-auto pt-[5vw] md:pt-[8vw] bg-[#faf9f9]">
           <h2 class="text-center text-[5vw] md:text-[3vw] font-bold">
             <span class="text-[4vw] md:text-[2.4vw]">ほか</span>広告代理店<span
               class="text-[4vw] md:text-[2.4vw]"
@@ -2102,7 +2105,7 @@
         </div>
       </section>
       <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
-        <div class="w-11/12 m-auto bg-[#faf9f9] mt-[4vw] relative">
+        <div class="w-11/12 m-auto bg-[#faf9f9] pt-[4vw] md:pt-[6vw]  relative">
           <img
             src="/img/bg-effect2.png"
             alt=""
@@ -2183,7 +2186,7 @@
               <p class="text-[2.4vw] md:text-[0.8vw]">
                 ※現在、電話相談(<a
                   href="tel:03-6826-0562"
-                  class="underline text-red-500 hover:text-blue-600 duration-200"
+                  class="underline hover:text-[#ff3131] text-blue-600 duration-200"
                   >03-6826-0562</a
                 >)も多数お受けしております。
               </p>
@@ -2219,7 +2222,7 @@
         </div>
       </section>
       <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
-        <div class="w-full md:w-11/12 m-auto bg-[#faf9f9] mt-[4vw] font-bold relative">
+        <div class="w-full md:w-11/12 m-auto bg-[#faf9f9] mt-[4vw] md:pt-[3vw] font-bold relative">
           <img
             src="/img/bg-effect2.png"
             alt=""
@@ -2387,7 +2390,7 @@
         </div>
       </section>
       <section class="w-[95%] m-auto md:w-9/12 md:m-0 ">
-        <div class="w-full md:w-11/12 m-auto bg-[#faf9f9] mt-[3vw] relative">
+        <div class="w-full md:w-11/12 m-auto bg-[#faf9f9] mt-[3vw] md:pt-[4vw] relative">
           <img
             src="/img/bg-effect1.png"
             alt=""
@@ -2640,10 +2643,10 @@
                         ただし、その分閲覧回数が少なくなってしまったり、商材によっては費用対効果が悪くなる場合もあります。<br />
                         『グローバルアド』では金額面やWEB集客施策の検討段階からサポートできますので、初めてのWEB集客施策を検討している方でも<a
                           href="tel:03-6826-0526"
-                          class="underline hover:text-blue-600 duration-200"
+                          class="underline text-blue-600 hover:text-[#ff3131] duration-200"
                           >お電話</a
                         >または<a
-                          class="underline hover:text-blue-600 duration-200"
+                          class="underline text-blue-600 hover:text-[#ff3131] duration-200"
                           href="#contact"
                           >フォーム</a
                         >よりお気軽にご相談ください。</span
@@ -2695,7 +2698,7 @@
                         >で配信されます。<br />
                         申請状況によって広告配信開始日が前後する可能性があり、<b>平均3~4営業日で配信</b>されますので、余裕を持ったご依頼・ご相談を推奨いたします。<br /><br />
                         決算期の予算消化や補助金申請の都合などで「最短で広告配信をしたい！」という方はスタッフまでお気軽に<a
-                          class="underline hover:text-blue-600 duration-200"
+                          class="underline text-blue-600 hover:text-[#ff3131] duration-200"
                           href="#contact"
                           >ご相談</a
                         >ください。</span
@@ -2721,14 +2724,14 @@
                           >アカウントの無料診断を行っております。</span
                         >ぜひ拝見できればと思います。<br />
                         オンライン打ち合わせで画面共有をしながら<a
-                          class="underline hover:text-blue-600 duration-200"
+                          class="underline  text-blue-600 hover:text-[#ff3131] duration-200"
                           href="#contact"
                           >広告運用状況についてご相談</a
                         >いただくことが可能です。<br />
                         乗り換えご検討の方は現状の課題感やお困り事をお伝えいただければ、専門スタッフが第三者視点から所感をお伝えいたします。<br />
                         <b
                           >『グローバルアド』への強引な乗り換え誘導は行わないため安心して<a
-                            class="underline hover:text-blue-600 duration-200"
+                            class="underline  text-blue-600 hover:text-[#ff3131] duration-200"
                             href="#contact"
                             >ご相談</a
                           >ください。</b
@@ -2755,7 +2758,7 @@
                           >一般的にはWeb施策はデータが安定するのが3カ月目あたりと言われており、連動して問い合わせが発生してくる傾向にあります。</b
                         ><br />
                         『グローバルアド』では最短で初月からお問い合わせが発生したケースもございます。まずはお気軽に<a
-                          class="underline hover:text-blue-600 duration-200"
+                          class="underline  text-blue-600 hover:text-[#ff3131] duration-200"
                           href="#contact"
                           >ご相談</a
                         >ください。</span
@@ -2829,7 +2832,7 @@
                         また、<span class="text-red-500"
                           >海外広告も運用可能</span
                         >です。お気軽に<a
-                          class="underline hover:text-blue-600 duration-200"
+                          class="underline  text-blue-600 hover:text-[#ff3131] duration-200"
                           href="#contact"
                           >ご相談</a
                         >ください。</span
@@ -2945,7 +2948,7 @@
                         基本的にはご入金が確認出来次第の広告運用対応となります。<br />
                         停止期間があると学習状況に影響を与える場合もございますので、余裕を持ったご入金を推奨しております。<br />
                         そのほかの支払い方法をご希望の方は担当者まで<a
-                          class="underline hover:text-blue-600 duration-200"
+                          class="underline  text-blue-600 hover:text-[#ff3131] duration-200"
                           href="#contact"
                           >ご相談</a
                         >ください。</span
@@ -2978,7 +2981,7 @@
                 <a
                   href="https://chatgpt.com/g/g-arJH8Ojh6-kuroharuato-sahisushuo-ming-aiasisutanto-zhu-huioriera"
                   target="_blank"
-                  class="flex gap-[0.4vw] items-center justify-center underline text-[3.8vw] md:text-[1.8vw] font-bold pt-[2vw] hover:text-blue-600 duration-200"
+                  class="flex gap-[0.4vw] items-center justify-center underline text-[3.8vw] md:text-[1.8vw] font-bold pt-[2vw]  text-blue-600 hover:text-[#ff3131] duration-200"
                 >
                   <img
                     src="/img/ai.png"
@@ -2986,6 +2989,7 @@
                     class="w-[5vw] md:w-[2.4vw]"
                   />AIチャットに聞いてみる！
                 </a>
+                <p class="md:text-[1vw] text-center text-black pt-[0.3vw] font-bold">※ページが切り替わります</p>
               </div>
             </div>
           </div>
@@ -3309,7 +3313,7 @@
                   ご自身と馬が合わないと感じたときに担当者の変更相談がしやすい会社かどうかも確認することを推奨いたします。<br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                     >グローバルアドのサービス詳細を確認したい！></a
                   >
                 </p>
@@ -3332,7 +3336,7 @@
                   一般相場もございますが、商材・LP・広告運用の全てが関係して"成果"に結びついていきます。お打ち合わせではノルマのための営業ではなく、お客様の事業成長を見据えた有益な情報の提供に努めますので、お気軽にご相談ください。<br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                     >グローバルアドのサービス詳細を確認したい！></a
                   >
                 </p>
@@ -3354,7 +3358,7 @@
                   なお、弊社の独自調査では運用手数料は20%が相場と考えております。一方、弊社の『グローバルアド』は運用手数料10%で、初期費用無料(0円)・解約費用無料(0円)・1カ月更新OKとなっています。最低運用金額や最低運用手数料もない(無料)ため、お気軽にご相談ください。<br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                     >グローバルアドに見積もり依頼をしてみる！></a
                   >
                 </p>
@@ -3378,7 +3382,7 @@
                   中には、「実は乗り換えする気はないけど相談だけ...。」という方もおりますが、弊社はそれでも問題ございません。ご相談いただいた方へ有益な情報を提供することを意識してお打ち合わせをさせていただきますので、お気軽にご相談ください。<br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                     >乗り換え無料相談はコチラ！></a
                   >
                 </p>
@@ -3417,7 +3421,7 @@
                   場合によっては広告運用がベター策でない場合もございます。弊社では正直ベースでご回答差し上げますので、初めてのご依頼でも安心してご相談ください。<br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                     >広告運用の相談をする（無料）</a
                   >
                 </p>
@@ -3440,7 +3444,7 @@
                   なお、グローバルアドは「運用手数料10%」とシンプル明朗会計です。1カ月更新ができ、ご希望の金額で広告運用相談をしていただます。<br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                     >無料相談フォームにいく！ ></a
                   >
                 </p>
@@ -3461,7 +3465,7 @@
                   なお、グローバルアドでは、現在アカウント無料診断を実施中です。<br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                     >アカウント無料診断をする！ ></a
                   >
                 </p>
@@ -3630,7 +3634,7 @@
                   <br /><br />
                   <a
                     href="#contact"
-                    class="font-bold underline hover:text-blue-600 duration-200"
+                    class="font-bold underline  text-blue-600 hover:text-[#ff3131] duration-200"
                   >
                     無料見積もり相談はコチラ！ >
                   </a>
@@ -4087,8 +4091,8 @@
                 </div>
               </div>
             </div>
-            <p class="text-[1.2vw] font-bold text-right">etc...</p>
-            <p class="text-[1.2vw] font-bold text-right">
+            <p class="text-[3vw] md:text-[1.2vw] font-bold text-right">etc...</p>
+            <p class="text-[2.6vw] md:text-[1.2vw] font-bold text-right mt-[1vw] md:mt-0">
               ※その他気になるツールがございましたらお気軽にお申し付けください。
             </p>
           </div>
