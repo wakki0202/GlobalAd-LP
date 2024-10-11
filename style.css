@@ -304,6 +304,10 @@ body {
 }
 
 @media screen and (max-width: 756px) {
+  .top-text-shadow {
+    text-shadow: 2px 2px 1px #7f7045;
+  }
+
   .arrow-down::after {
     position: relative;
     top: 2.8vw;
