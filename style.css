@@ -368,4 +368,8 @@ body {
   .sm-top-text-shadow {
     text-shadow: 2px 2px 1px #a39059;
   }
+
+  .sm-price-text-shadow {
+    text-shadow: 1px 1px 1px #a39059;
+  }
 }
