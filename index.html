@@ -216,11 +216,11 @@
             /></span>
           </h1>
           <div class="relative">
-            <div class="absolute top-[-4vw] md:top-[-1vw] right-[10vw]">
+            <div class="absolute top-[-4vw] md:top-[-1vw] right-[10.4vw] md:right-[10.5vw]">
               <img src="/img/top-balloon.png" class="w-[8vw] md:w-[3vw]" alt="" />
             </div>
             <p
-              class="text-white z-10 absolute top-[-3.4vw] md:top-[-0.7vw] right-[10.3vw] text-[3vw] md:text-[1vw] rotate-[15deg]"
+              class="text-white z-10 absolute top-[-3.4vw] md:top-[-0.7vw] right-[10.8vw] text-[3vw] md:text-[1vw] rotate-[15deg]"
             >
               安心!
             </p>
@@ -228,13 +228,15 @@
               class="text-gray-800 text-right text-[2.5vw] md:text-[0.7vw] w-full md:w-[60%] m-auto pt-[3vw] md:pt-[1.2vw]"
             >
               ※<span
-              class="text-red-500 underline"
+              id="highlightText1"
+              class="text-red-500 underline underline-before"
               >ご予算「1万円～」でもご相談いただけます。</span
                 >ご希望の金額で広告が出せます。
             </p>
             <p class="text-gray-800 text-right  text-[2.5vw] md:text-[0.7vw] w-full md:w-[60%] m-auto">
               ※<span
-              class="text-red-500 underline"
+              id="highlightText2"
+              class="text-red-500 underline underline-before"
               >よくある「初月だけ」ではなく、2か月目以降も永久的に10%で運用できます。</span
               >
             </p>
@@ -497,13 +499,16 @@
                 </div>
               </div>
 
-              <button
-                type="button"
-                id="templete-btn"
-                class="inline-block w-fit text-blue-600 hover:text-[#ff3131] duration-200 underline  text-[3vw] md:text-[1.1vw]"
-              >
-                テンプレートをコピーして使う
-              </button>
+              <div class="flex flex-col md:flex-row justify-between">
+                <button
+                  type="button"
+                  id="templete-btn2"
+                  class="inline-block w-fit text-black underline  text-[3.6vw] md:text-[1.05vw] text-blue-600 hover:text-[#ff3131] inline-block"
+                >
+                  テンプレートをコピーして使う
+                </button>
+                <p class="text-[3.6vw] md:text-[1.05vw] text-black inline-block md:hidden" >電話相談はコチラ（TEL:<a href="tel:03-6826-0562" class="underline text-blue-600 hover:text-[#ff3131]">03-6826-0562</a>）</p>
+              </div>
               <button
                 id="cta-btn"
                 type="submit"
@@ -1019,21 +1024,21 @@
             />
             <div class="relative">
               <p class="text-right text-[2.4vw] md:text-[0.8vw]">
-                ※<span class="text-red-500 underline"
+                ※<span  id="highlightText3" class="text-red-500 underline underline-before"
                   >ご予算「1万円～」でもご相談いただけます。</span
                   >ご希望の金額で広告が出せます。
               </p>
               <p class="text-right text-[2.4vw] md:text-[0.8vw]">
-                ※<span class="text-red-500 underline">よくある「初月だけ」ではなく、2か月目以降も<span
+                ※<span  id="highlightText4" class="text-red-500 underline underline-before">よくある「初月だけ」ではなく、2か月目以降も<span
                   class="text-red-500 underline"
                   >永久的に10%で運用</span
                 >できます。</span>
               </p>
-              <div class="absolute right-[-2vw] top-[-3vw]">
-                <img src="/img/plun-balloon.png" alt="" class="w-[4vw]" />
+              <div class="absolute md:right-[-2vw] md:top-[-3vw] right-[-2vw] top-[-6vw]">
+                <img src="/img/plun-balloon.png" alt="" class="w-[7vw] md:w-[4vw]" />
               </div>
               <p
-                class="absolute text-[1.1vw] rotate-[13deg] right-[-1.3vw] top-[-2.4vw] font-bold"
+                class="absolute text-[2.2vw] md:text-[1.1vw] rotate-[13deg] right-[-1.3vw] top-[-5vw] md:top-[-2.4vw] font-bold"
               >
                 安心!
               </p>
@@ -1394,13 +1399,15 @@
               </p>
             </div>
             <p class="text-[2.3vw] md:text-[0.8vw] mt-[1vw] md:w-[50%] m-auto text-right">
-              ※ご予算「1万円～」でもご相談いただけます。ご希望の金額で広告が出せます。
+              ※<span id="highlightText5" class="text-red-500 underline underline-before"
+              >ご予算「1万円～」でもご相談いただけます。</span
+              >ご希望の金額で広告が出せます。
             </p>
             <p class="text-right text-[2.3vw] md:text-[0.8vw] md:w-[50%] m-auto text-right">
-              ※よくある「初月だけ」ではなく、2か月目以降も<span
+              ※<span id="highlightText6" class="text-red-500 underline underline-before">よくある「初月だけ」ではなく、2か月目以降も<span
                 class="text-red-500 underline"
                 >永久的に10%</span
-              >で運用できます。
+              >で運用できます。</span>
             </p>
             <img
               src="/img/pitogram2.png"
@@ -2476,9 +2483,9 @@
               </p>
             </div>
             <div class="relative top-[1.4vw] left-[20vw]">
-              <img src="/img/balloon.png" alt="" class="w-[60vw] md:w-[24vw]" />
+              <img src="/img/balloon.png" alt="" class="w-[50vw] md:w-[24vw]" />
               <p
-                class="flex justify-center md:text-[1.1vw] text-[2.2vw] absolute z-10 top-[44%]  left-[35%] md:left-[18%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center md:text-[1.1vw] text-[2.2vw] absolute z-10 top-[44%]  left-[27%] md:left-[18%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[5vw] md:w-[2vw]" />
                 <span class="text-[#ff3131]">契約期間が1カ月更新</span
@@ -2486,9 +2493,9 @@
               </p>
             </div>
             <div class="relative top-[2.6vw] left-[28vw]">
-              <img src="/img/balloon.png" alt="" class="w-[65vw] md:w-[22vw]" />
+              <img src="/img/balloon.png" alt="" class="w-[47vw] md:w-[22vw]" />
               <p
-                class="flex justify-center md:text-[1.1vw] text-[2.2vw] absolute z-10 top-[44%]  left-[35%] md:left-[17%] translate-x-[-50%] translate-y-[-50%]"
+                class="flex justify-center md:text-[1.1vw] text-[2.2vw] absolute z-10 top-[44%]  left-[25%] md:left-[17%] translate-x-[-50%] translate-y-[-50%]"
               >
                 <img src="/img/check.png" alt="" class="w-[5vw] md:w-[2vw]" />
                 あわよくば<span class="text-[#ff3131]">初期費用も無料</span
@@ -3071,7 +3078,6 @@
                 type="checkbox"
                 name="TAB"
                 class="tab-switch"
-                checked
               /><label
                 class="tab-label flex justify-center gap-[0.5vw] items-center text-[3.2vw] md:text-[1.1vw]"
                 for="TAB-01"
@@ -4305,7 +4311,15 @@
               ><img src="/img/top-bikkuri.png" alt="" class="w-[2.5vw] inline"
             /></span>
             </h1>
+            <div class="absolute top-[48vw] md:top-[26vw] right-[10vw] md:right-[12.5vw]">
+              <img src="/img/top-balloon.png" class="w-[8vw] md:w-[3vw]" alt="" />
+            </div>
             <p
+              class="text-white z-10 absolute top-[48.8vw] md:top-[26.4vw] right-[10.5vw] md:right-[12.75vw] text-[3vw] md:text-[1vw] rotate-[15deg]"
+            >
+              安心!
+            </p>
+            <!-- <p
               class="text-gray-800 text-right text-[2.5vw] md:text-[0.7vw] w-[100%] md:w-[60%] m-auto pt-[4vw] md:pt-[1.2vw]"
             >
               <span
@@ -4318,6 +4332,18 @@
                 class="text-red-500 underline"
                 >永久的に10%で運用</span
               >できます。
+            </p> -->
+
+            <p  class="text-gray-800 text-right text-[2.5vw] md:text-[0.7vw] w-[100%] md:w-[60%] m-auto pt-[4vw] md:pt-[1.2vw]">
+              ※<span id="highlightText7" class="text-red-500 underline underline-before"
+                >ご予算「1万円～」でもご相談いただけます。</span
+                >ご希望の金額で広告が出せます。
+            </p>
+            <p class="text-gray-800 text-right text-[2.5vw] md:text-[0.7vw] w-[100%] md:w-[60%] m-auto">
+              ※<span id="highlightText8" class="text-red-500 underline underline-before">よくある「初月だけ」ではなく、2か月目以降も<span
+                class="text-red-500 underline"
+                >永久的に10%で運用</span
+              >できます。</span>
             </p>
           </div>
         </div>
@@ -4452,7 +4478,7 @@
                     >
                       テンプレートをコピーして使う
                     </button>
-                    <a class="text-[3.6vw] md:text-[1.05vw] text-black inline-block" href="tel:03-6826-0562">電話相談はコチラ（TEL:<span class="underline">03-6826-0562</span>）</a>
+                    <p class="text-[3.6vw] md:text-[1.05vw] text-black inline-block" >電話相談はコチラ（TEL:<a href="tel:03-6826-0562" class="underline text-blue-600 hover:text-[#ff3131]">03-6826-0562</a>）</p>
                   </div>
                     <button
                       id="cta-btn"
@@ -4592,36 +4618,68 @@
       observer.observe(mainWrap);
     });
 
-    let expantion = document.getElementsByClassName("underline-before");
-    // .underline-beforeのついたDOMを取得
+    // let expantion = document.getElementsByClassName("underline-before");
+    // // .underline-beforeのついたDOMを取得
 
-    let expantionswitch = ["off", "off"];
-    // 下線を引くアクションを行ったか行ってないかのスイッチを配列の値で表現。初期値はoff
+    // let expantionswitch = ["off", "off"];
+    // // 下線を引くアクションを行ったか行ってないかのスイッチを配列の値で表現。初期値はoff
 
-    window.onscroll = function () {
-      // スクロールした場合、関数（function）を実行
+    // window.onscroll = function () {
+    //   // スクロールした場合、関数（function）を実行
 
-      for (let i = 0, len = expantion.length; i < len; i++) {
-        // .underline-beforeの数だけ繰り返しするfor文
+    //   for (let i = 0, len = expantion.length; i < len; i++) {
+    //     // .underline-beforeの数だけ繰り返しするfor文
 
-        let ex_clientRect = expantion[i].getBoundingClientRect();
-        // [i]番目の.underline-beforeの境界ボックスを取得（画面内での.underline-beforeの位置を取得）
+    //     let ex_clientRect = expantion[i].getBoundingClientRect();
+    //     // [i]番目の.underline-beforeの境界ボックスを取得（画面内での.underline-beforeの位置を取得）
 
-        let wh = window.innerHeight;
-        // ブラウザのウインドウの表示領域の高さを取得。（ページの上からどれだけ進んだか計る）
+    //     let wh = window.innerHeight;
+    //     // ブラウザのウインドウの表示領域の高さを取得。（ページの上からどれだけ進んだか計る）
 
-        if (wh > ex_clientRect.top + 200 && expantionswitch[i] === "off") {
-          // if文による分岐。もしウインドウの表示領域の高さが、[i]番目の.underline-beforeの画面内での上からの位置+200pxより
-          // 高かった場合。また、[i]番目のexpantionswitchがoffの場合にtrueの動作を返す。
+    //     if (wh > ex_clientRect.top + 200 && expantionswitch[i] === "off") {
+    //       // if文による分岐。もしウインドウの表示領域の高さが、[i]番目の.underline-beforeの画面内での上からの位置+200pxより
+    //       // 高かった場合。また、[i]番目のexpantionswitchがoffの場合にtrueの動作を返す。
 
-          expantion[i].classList.add("underline-after");
-          // [i]番目の.underline-beforeがついている要素に新たに.underline-afterを追加。これによって下線を引くアクションが実現する。
+    //       expantion[i].classList.add("underline-after");
+    //       // [i]番目の.underline-beforeがついている要素に新たに.underline-afterを追加。これによって下線を引くアクションが実現する。
 
-          expantionswitch[i] = "on";
-          // offだった配列の値をonにする。これによって二度同じ動作をするのを防いでいる。
-        }
-      }
-    };
+    //       expantionswitch[i] = "on";
+    //       // offだった配列の値をonにする。これによって二度同じ動作をするのを防いでいる。
+    //     }
+    //   }
+    // };
+
+    // IntersectionObserverを使って要素が画面に表示されたタイミングでマーカー効果を適用
+    document.addEventListener("DOMContentLoaded", function () {
+    const target1 = document.getElementById('highlightText1');
+        const target2 = document.getElementById('highlightText2');
+        const target3 = document.getElementById('highlightText3');
+        const target4 = document.getElementById('highlightText4');
+        const target5 = document.getElementById('highlightText5');
+        const target6 = document.getElementById('highlightText6');
+        const target7 = document.getElementById('highlightText7');
+        const target8 = document.getElementById('highlightText8');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('underline-after');
+                }
+            });
+        });
+          // 各<span>要素を監視対象に設定
+            observer.observe(target1);
+        observer.observe(target2);
+        observer.observe(target3);
+        observer.observe(target4);
+        observer.observe(target5);
+        observer.observe(target6);
+        observer.observe(target7);
+        observer.observe(target8);
+
+      });
+
+     
 
     $(document).ready(function () {
       $(".slider").slick({
