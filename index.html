@@ -24,7 +24,7 @@
       <div
         class="flex justify-between items-center gap-[1vw] md:gap-[2vw] m-auto py-[0.3vw] text-black"
       >
-        <div class="ml-[0.5vw] md:ml-[2vw]">
+        <a href="#TOP" class="ml-[0.5vw] md:ml-[2vw]">
           <p class="">
             <span class="text-[2.2vw] md:text-[1.05vw] leading-none flex flex-col items-center justify-center"
               >
@@ -39,7 +39,7 @@
               </span
             >
           </p>
-        </div>
+        </a>
         <div class="flex gap-[1.6vw] md:gap-[1.4vw] mr-[1.6vw] items-center">
           
           <a target="_blank" href="https://chatgpt.com/g/g-arJH8Ojh6-kuroharuato-sahisushuo-ming-aiasisutanto-zhu-huioriera" class="text-[3.2vw] md:text-[1.4vw] font-bold flex flex-col items-center relative"><span>AIに相談<span class="md:inline-block hidden">する</span></span>
@@ -119,7 +119,7 @@
                 <span class="text-[3vw] md:text-[1.5vw] leading-none font-bold">AIチャット</span
                 ><br />に聞いてみる!
               </p>
-              <p class="underline-before text-center text-[2vw] md:text-[1vw] text-black md:text-white pt-[0.2vw] w-fit m-auto">
+              <p id="highlightText9" class="underline-before-top text-center text-[2vw] md:text-[1vw] text-black md:text-white pt-[0.2vw] w-fit m-auto">
                 ※最短10秒回答
               </p>
             </div>
@@ -229,16 +229,15 @@
             >
               ※<span
               id="highlightText1"
-              class="text-red-500 underline underline-before"
+              class="text-red-500 underline underline-before-top"
               >ご予算「1万円～」でもご相談いただけます。</span
                 >ご希望の金額で広告が出せます。
             </p>
             <p class="text-gray-800 text-right  text-[2.5vw] md:text-[0.7vw] w-full md:w-[60%] m-auto">
-              ※<span
-              id="highlightText2"
-              class="text-red-500 underline underline-before"
-              >よくある「初月だけ」ではなく、2か月目以降も永久的に10%で運用できます。</span
-              >
+              ※<span   class=" ">よくある「初月だけ」ではなく、2か月目以降も<span
+                id="highlightText2" class="text-red-500 underline underline-before-top"
+                >永久的に10%で運用できます。</span
+                ></span>
             </p>
           </div>
 
@@ -502,7 +501,7 @@
               <div class="flex flex-col md:flex-row justify-between">
                 <button
                   type="button"
-                  id="templete-btn2"
+                  id="templete-btn"
                   class="inline-block w-fit text-black underline  text-[3.6vw] md:text-[1.05vw] text-blue-600 hover:text-[#ff3131] inline-block"
                 >
                   テンプレートをコピーして使う
@@ -1029,10 +1028,10 @@
                   >ご希望の金額で広告が出せます。
               </p>
               <p class="text-right text-[2.4vw] md:text-[0.8vw]">
-                ※<span  id="highlightText4" class="text-red-500 underline underline-before">よくある「初月だけ」ではなく、2か月目以降も<span
-                  class="text-red-500 underline"
-                  >永久的に10%で運用</span
-                >できます。</span>
+                ※<span   class=" ">よくある「初月だけ」ではなく、2か月目以降も<span
+                  id="highlightText4" class="text-red-500 underline underline-before"
+                  >永久的に10%で運用できます。</span
+                  ></span>
               </p>
               <div class="absolute md:right-[-2vw] md:top-[-3vw] right-[-2vw] top-[-6vw]">
                 <img src="/img/plun-balloon.png" alt="" class="w-[7vw] md:w-[4vw]" />
@@ -1404,10 +1403,10 @@
               >ご希望の金額で広告が出せます。
             </p>
             <p class="text-right text-[2.3vw] md:text-[0.8vw] md:w-[50%] m-auto text-right">
-              ※<span id="highlightText6" class="text-red-500 underline underline-before">よくある「初月だけ」ではなく、2か月目以降も<span
-                class="text-red-500 underline"
-                >永久的に10%</span
-              >で運用できます。</span>
+              ※<span   class=" ">よくある「初月だけ」ではなく、2か月目以降も<span
+                id="highlightText6" class="text-red-500 underline underline-before"
+                >永久的に10%で運用できます。</span
+                ></span>
             </p>
             <img
               src="/img/pitogram2.png"
@@ -4340,10 +4339,10 @@
                 >ご希望の金額で広告が出せます。
             </p>
             <p class="text-gray-800 text-right text-[2.5vw] md:text-[0.7vw] w-[100%] md:w-[60%] m-auto">
-              ※<span id="highlightText8" class="text-red-500 underline underline-before">よくある「初月だけ」ではなく、2か月目以降も<span
-                class="text-red-500 underline"
-                >永久的に10%で運用</span
-              >できます。</span>
+              ※<span   class=" ">よくある「初月だけ」ではなく、2か月目以降も<span
+                id="highlightText8" class="text-red-500 underline underline-before"
+                >永久的に10%で運用できます。</span
+                ></span>
             </p>
           </div>
         </div>
@@ -4570,8 +4569,6 @@
     let lastScrollTop = 0;
     const header = document.getElementById("header");
 
-   
-
     $(".media-icon").find(".acount").hide();
 
     $(".media-icon").hover(
@@ -4659,6 +4656,7 @@
         const target6 = document.getElementById('highlightText6');
         const target7 = document.getElementById('highlightText7');
         const target8 = document.getElementById('highlightText8');
+        const target9 = document.getElementById('highlightText9');
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -4676,10 +4674,8 @@
         observer.observe(target6);
         observer.observe(target7);
         observer.observe(target8);
-
+        observer.observe(target9);
       });
-
-     
 
     $(document).ready(function () {
       $(".slider").slick({
@@ -4700,23 +4696,23 @@
       });
     });
 
-    document
-      .getElementById("templete-btn")
-      .addEventListener("click", function () {
+//     $(function() {
+//   $('#templete-btn').on('click', function() {
+//     $('#msg').text('①ジャンル→\n②LP有無やURL→\n③ご予算→\n④運用期間→\n⑤目標数値→\n⑥お問い合わせ詳細↓');
+//   });
+// });
+
+    document.getElementById("templete-btn").addEventListener("click", function () {
         document.getElementById("msg").value =
           "①ジャンル→\n②LP有無やURL→\n③ご予算→\n④運用期間→\n⑤目標数値→\n⑥お問い合わせ詳細↓";
       });
 
-    document
-      .getElementById("templete-btn2")
-      .addEventListener("click", function () {
+    document.getElementById("templete-btn2").addEventListener("click", function () {
         document.getElementById("msg2").value =
           "①ジャンル→\n②LP有無やURL→\n③ご予算→\n④運用期間→\n⑤目標数値→\n⑥お問い合わせ詳細↓";
       });
 
-    document
-      .getElementById("templete-btn3")
-      .addEventListener("click", function () {
+    document.getElementById("templete-btn3").addEventListener("click", function () {
         document.getElementById("msg3").value =
           "①ジャンル→\n②LP有無やURL→\n③ご予算→\n④運用期間→\n⑤目標数値→\n⑥お問い合わせ詳細↓";
       });
@@ -4749,8 +4745,8 @@
     document.querySelectorAll(".accordion-header").forEach((button) => {
       button.addEventListener("click", () => {
         const content = button.nextElementSibling;
-        const plus = button.querySelector("#accordion-open-btn");
-        const minus = button.querySelector("#accordion-close-btn");
+        const plus = button.querySelector("accordion-open-btn");
+        const minus = button.querySelector("accordion-close-btn");
         if (content.style.display === "block") {
           content.style.display = "none";
           plus.classList.add("block");
@@ -4771,46 +4767,14 @@
             if (otherButton !== button) {
               otherButton
                 .querySelector("#question-triangle")
-                .classList.remove("rotate-90");
+                .classList.remove("open");
+              otherButton.nextElementSibling.style.display = "none";
             }
           });
-      });
-    });
 
-    // QAアコーディオン
-    document.querySelectorAll(".accordion-header2").forEach((button) => {
-      button.addEventListener("click", () => {
-        const content = button.nextElementSibling;
-        const triangle = button.querySelector("#question-triangle");
-
-        if (content.style.display === "block") {
-          content.style.display = "none";
-          triangle.classList.remove("-rotate-90");
-        } else {
-          content.style.display = "block";
-          triangle.classList.add("-rotate-90");
-        }
-
-        document
-          .querySelectorAll(".accordion-header2")
-          .forEach((otherButton) => {
-            if (otherButton !== button) {
-              otherButton
-                .querySelector("#question-triangle")
-                .classList.remove("rotate-90");
-            }
-          });
-      });
-    });
-
-    $(function () {
-      $(".tab-switch").on("click", function () {
-        if ($(this).prop("checked")) {
-          // 一旦全てをクリアして再チェックする
-          $(".tab-switch").prop("checked", false);
-          $(this).prop("checked", true);
-        }
+        button.querySelector("#question-triangle").classList.toggle("open");
       });
     });
   </script>
+
 </html>

@@ -49,8 +49,19 @@ body {
   transform: rotateY(360deg);
 }
 
-.underline-before {
+.underline-before-top {
   background: linear-gradient(#fdc347, #fdc347) 0 100%/0 6px no-repeat;
+  /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
+
+  transition: background 3s;
+  /*トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
+
+  text-decoration: none;
+  /*テキストの装飾の設定 */
+}
+
+.underline-before {
+  background: linear-gradient(#feb000, #feb000) 0 100%/0 6px no-repeat;
   /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
 
   transition: background 3s;
