@@ -61,7 +61,7 @@ body {
 }
 
 .underline-before {
-  background: linear-gradient(#feb000, #feb000) 0 100%/0 6px no-repeat;
+  background: linear-gradient(#ffde59, #ffde59) 0 100%/0 6px no-repeat;
   /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
 
   transition: background 3s;
