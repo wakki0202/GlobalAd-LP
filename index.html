@@ -4744,7 +4744,7 @@
     );
 
     // 切り分けプランアコーディオン
-    document.querySelectorAll(".accordion-header2").forEach((button) => {
+    document.querySelectorAll(".accordion-header").forEach((button) => {
       button.addEventListener("click", () => {
         const content = button.nextElementSibling;
         const plus = button.querySelector("accordion-open-btn");
@@ -4765,6 +4765,40 @@
 
         document
           .querySelectorAll(".accordion-header")
+          .forEach((otherButton) => {
+            if (otherButton !== button) {
+              otherButton
+                .querySelector("#question-triangle")
+                .classList.remove("open");
+              otherButton.nextElementSibling.style.display = "none";
+            }
+          });
+
+        button.querySelector("#question-triangle").classList.toggle("open");
+      });
+    });
+
+    document.querySelectorAll(".accordion-header2").forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const plus = button.querySelector("accordion-open-btn");
+        const minus = button.querySelector("accordion-close-btn");
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          plus.classList.add("block");
+          plus.classList.remove("hidden");
+          minus.classList.add("hidden");
+          minus.classList.remove("block");
+        } else {
+          content.style.display = "block";
+          plus.classList.remove("block");
+          plus.classList.add("hidden");
+          minus.classList.remove("hidden");
+          minus.classList.add("block");
+        }
+
+        document
+          .querySelectorAll(".accordion-header2")
           .forEach((otherButton) => {
             if (otherButton !== button) {
               otherButton
